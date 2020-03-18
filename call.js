@@ -37,7 +37,7 @@
 
 
 
-// Apply Function
+// call Function
 
 let Person = {
     fullName: function() {
