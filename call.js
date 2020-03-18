@@ -16,8 +16,8 @@
 // Call Function
 
 let Person = {
-    fullName: function() {
-        return this.firstName+ " "+ this.lastName;
+    fullName: function(address, phone) {
+        return this.firstName+ " "+ this.lastName+" "+ address+" "+phone;
     }
 };
 
@@ -31,5 +31,5 @@ let PersonSecond = {
     lastName: "Gate"
 };
 
-personFullName = Person.fullName.call(PersonFirst);
+personFullName = Person.fullName.call(PersonFirst, "KTM", "124568");
 console.log(personFullName);
