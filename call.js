@@ -1,13 +1,35 @@
-let obj = {num:2};
+// let obj = {num:2};
 
-let addToThis = function(a, b, c){
-    return this.num + a + b + c;
+// let addToThis = function(a, b, c){
+//     return this.num + a + b + c;
+// };
+
+// // console.log(addToThis.call(obj, 3));    // functionname.call(obj, functionarguments)
+
+// // let arr = [1,2,3];
+// // console.log(addToThis.apply(obj, arr));
+
+// var bound = addToThis.bind(obj);
+// console.log(bound(1,2,3));
+
+
+// Call Function
+
+let Person = {
+    fullName: function() {
+        return this.firstName+ " "+ this.lastName;
+    }
 };
 
-// console.log(addToThis.call(obj, 3));    // functionname.call(obj, functionarguments)
+let PersonFirst = {
+    firstName: "Ronald",
+    lastName: "Gate"
+};
 
-// let arr = [1,2,3];
-// console.log(addToThis.apply(obj, arr));
+let PersonSecond = {
+    firstName: "Romeo",
+    lastName: "Gate"
+};
 
-var bound = addToThis.bind(obj);
-console.log(bound(1,2,3));
+personFullName = Person.fullName.call(PersonFirst);
+console.log(personFullName);
