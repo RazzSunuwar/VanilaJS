@@ -1,8 +1,8 @@
 // Apply function
 
 let Person = {
-    fullName: function() {
-        return this.firstName+ " "+ this.lastName;
+    fullName: function(address, phone) {
+        return this.firstName+ " "+ this.lastName+", "+ address+", "+ phone;
     }
 };
 
@@ -16,5 +16,5 @@ let PersonSecond = {
     lastName: "Gate"
 };
 
-personFullName = Person.fullName.apply(PersonFirst);
+personFullName = Person.fullName.apply(PersonFirst, ["Ktm", "124555"]);
 console.log(personFullName);
