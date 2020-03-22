@@ -39,21 +39,43 @@
 
 // call Function
 
-let Person = {
-    fullName: function() {
-        return this.firstName+ " "+ this.lastName;
-    }
-};
+// let Person = {
+//     fullName: function() {
+//         return this.firstName+ " "+ this.lastName;
+//     }
+// };
+//
+// let PersonFirst = {
+//     firstName: "Ronald",
+//     lastName: "Gate"
+// };
+//
+// let PersonSecond = {
+//     firstName: "Romeo",
+//     lastName: "Gate"
+// };
+//
+// personFullName = Person.fullName.call(PersonFirst);
+// console.log(personFullName);
 
-let PersonFirst = {
-    firstName: "Ronald",
-    lastName: "Gate"
-};
+
+
+// call practice
+ let Person = {
+   fullName: function(){
+     return this.firstName+ " "+ this.lastName
+   }
+ }
+
+ let PersonFirst = {
+   firstName: 'John',
+   lastName: 'Bell'
+ }
 
 let PersonSecond = {
-    firstName: "Romeo",
-    lastName: "Gate"
-};
+  firstName: 'Albert',
+  lastName: 'Martin'
+}
 
 personFullName = Person.fullName.call(PersonFirst);
 console.log(personFullName);
