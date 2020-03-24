@@ -25,13 +25,27 @@
 // console.log('Post it in the Instagram');
 
 
-// Practice
 
-function buyMobile(model){
-    return model;
+//Task Part
+function askMoney(callback){
+    console.log('Mom told me to wait for the money untill salary arrived');
+    setTimeout(function(){
+        console.log('Salary Arrived!');
+        callback();
+    }, 2000);
 }
 
-console.log('I want to buy new mobile');
-let mobile = buyMobile('S2O Ultra');
-console.log('Take photos');
-console.log('Post it in instagram');
+
+// Execution part
+console.log('I want to buy mobile');
+console.log(`I don't have money so i asked to my parents`);
+askMoney(function(){
+    console.log('Asked money arrived');
+    console.log('Now i have to perform all the works which needs money');
+});
+console.log('Eat foods');
+console.log('Do exercise');
+console.log('Eat Again eat foods');
+
+
+
