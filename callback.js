@@ -14,12 +14,24 @@
 
 
 //Practice 2
+// function buyMobile(model){
+//     return model;
+// }
+
+// console.log('I want to buy mobile');
+// let mobile = buyMobile('S10');
+// console.log('I want to buy >>', mobile);
+// console.log('Take photos');
+// console.log('Post it in the Instagram');
+
+
+// Practice
+
 function buyMobile(model){
     return model;
 }
 
-console.log('I want to buy mobile');
-let mobile = buyMobile('S10');
-console.log('I want to buy >>', mobile);
+console.log('I want to buy new mobile');
+let mobile = buyMobile('S2O Ultra');
 console.log('Take photos');
-console.log('Post it in the Instagram');
+console.log('Post it in instagram');
