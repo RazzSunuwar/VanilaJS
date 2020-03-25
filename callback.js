@@ -54,9 +54,15 @@
 
 // Task Part
 function buyPhone(cb){
+    let phone = true;
     setTimeout(function(){
+        let phone = false;
         console.log('I am buying phone');
-        cb();
+        if(phone) {
+            cb(null, 's10');
+        } else{
+            cb('no phone');
+        }
     }, 2000);
 }
 
@@ -70,7 +76,12 @@ function postInInstagram(){
 
 
 // Execution Part
-buyPhone(function(){
+buyPhone(function(failure, success){
+    if(failure){
+        console.log('Failure in buyPhone', failure);
+    } else{
+        console.log('Success in buyPhone', success);
+    }
     takePhoto();
     postInInstagram();
 });
