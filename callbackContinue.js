@@ -69,3 +69,7 @@ askForNote('JavaScript', function(err, done){
 });
 console.log('clean room');
 console.log('prepare pen pencils papers');
+
+
+
+
