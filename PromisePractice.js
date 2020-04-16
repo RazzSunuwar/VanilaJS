@@ -15,7 +15,7 @@ function AskForNote(topic) {
 console.log("Start Preparation for the exam");
 AskForNote("JavaScript")
   .then(function(data){
-      console.log("Note arrived");
+    console.log("Note arrived");
   })
   .catch(function(err){
     console.log("Error Note", err);
