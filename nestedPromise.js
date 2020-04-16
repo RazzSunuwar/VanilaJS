@@ -8,10 +8,8 @@ function askForNote(topic){
 				pdfNote: topic
 			})
 		}, 2000)
-
 	})
 };
-
 
 function printNote(pdfNote){
 	return new Promise(function(resolve, reject){
@@ -34,7 +32,6 @@ function entertainment() {
 			resolve();
 		},2000);
 	})
-	
 };
 
 function servicing(bike) {
@@ -44,7 +41,6 @@ function servicing(bike) {
 		}, 2000);
 	})
 }
-
 
 // Execution Part
 console.log("Start Preparation for the exam");
@@ -68,4 +64,3 @@ askForNote("Node JS")
 	.catch(function(err){
 		console.log('Error in promise>>>', err);
 	})
-
