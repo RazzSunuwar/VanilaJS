@@ -51,45 +51,55 @@
 
 
 // Practice 4
+//
+// // Task Part
+// function buyPhone(cb){
+//     let phone = true;
+//     setTimeout(function(){
+//         let phone = false;
+//         console.log('I am buying phone');
+//         if(phone) {
+//             cb(null, 's10');
+//         } else{
+//             cb('no phone');
+//         }
+//     }, 2000);
+// }
+//
+// function takePhoto(){
+//     console.log('Taking photos');
+// };
+//
+// function postInInstagram(){
+//     console.log('Post it in the instagram');
+// };
+//
+// // Execution Part
+// buyPhone(function(failure, success){
+//     if(failure){
+//         console.log('Failure in buyPhone', failure);
+//     } else{
+//         console.log('Success in buyPhone', success);
+//     }
+//     takePhoto();
+//     postInInstagram();
+// });
+// console.log('Its raining');
 
-// Task Part
-function buyPhone(cb){
-    let phone = true;
-    setTimeout(function(){
-        let phone = false;
-        console.log('I am buying phone');
-        if(phone) {
-            cb(null, 's10');
-        } else{
-            cb('no phone');
-        }
-    }, 2000);
+
+// Practice 5
+
+let x = function(){
+  console.log("i am call from inside a function")
 }
 
-function takePhoto(){
-    console.log('Taking photos');
-};
+let y = function(callback){
+  console.log("do something")
+  callback()
+}
 
-function postInInstagram(){
-    console.log('Post it in the instagram');
-};
+y(x);
 
-
-// Execution Part
-buyPhone(function(failure, success){
-    if(failure){
-        console.log('Failure in buyPhone', failure);
-    } else{
-        console.log('Success in buyPhone', success);
-    }
-    takePhoto();
-    postInInstagram();
-});
-console.log('Its raining');
-
-
-
-
-
-
-
+// Expected result
+// do something
+// i am call from inside a function
