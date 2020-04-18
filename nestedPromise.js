@@ -13,7 +13,6 @@ function askForNote(topic){
 
 function printNote(pdfNote){
 	return new Promise(function(resolve, reject){
-		setTimeout(function(){
 			console.log("Note is in stationary");
 			console.log("Shopkeeper promise to callback after he finished printing note");
 			let electricity = true;
@@ -22,7 +21,6 @@ function printNote(pdfNote){
 					resolve('printNote')
 				}, 3000);
 			}
-		})
 	})
 }
 
