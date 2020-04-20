@@ -15,7 +15,9 @@ function printNote(pdfNote, callback){
     let electricity = true;
     if(electricity){
         setTimeout(function(){
-            callback(null, 'print pdf note');
+            callback(null, {
+                print: pdfNote
+            });
         }, 2000);
     } else {
         callback('no-electricity');
