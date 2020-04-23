@@ -1,6 +1,6 @@
 // There are two ways to define class in JavaScript using class keyword:
 // Class Declaration
-// Class Declaration
+// Class Expression
 
 // Class Declaration
 /*
@@ -12,7 +12,8 @@
   }
 */
 
-/* Constructor: The constructor method is a special method for creating and initializing an object created within a class. There can be only one special method within the "constructor" in a class.
+/* Constructor: The constructor method is a special method for creating and initializing 
+an object created within a class. There can be only one special method within the "constructor" in a class.
 */
 
 class Mobile {
