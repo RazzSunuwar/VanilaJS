@@ -38,5 +38,12 @@ Galaxy Price Rs.3000
 3000 Price Rs.3000
 */
 
+/* We can create object by using:-
+-Object literial
+-Object Constructor
+-Factory Function 
+- Constructor
+*/
+
 
  
