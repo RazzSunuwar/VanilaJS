@@ -19,5 +19,24 @@ instance of an object for use.
 
 
 
+// Constructor with Parameter
+function Mobile(model_no){
+	this.model = model_no;
+	this.price = function(){
+		document.write(this.model + "Price Rs.3000 <br>");
+	}
+
+}
+var Samsung = new Mobile('Galaxy ');
+var Nokia = new Mobile('3000 ');
+Samsung.price();
+Nokia.price();
+
+
+/*
+Galaxy Price Rs.3000
+3000 Price Rs.3000
+*/
+
 
  
