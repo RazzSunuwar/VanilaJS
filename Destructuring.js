@@ -188,7 +188,7 @@ const personOne = {
   age: 26,
   address: { location: 'USA', state: 'California' }
 }
- */
+*/
 
 function prinUser({ name, age }){
     console.log(`Name is ${name}. Age is ${age}`);
