@@ -93,7 +93,106 @@ intended. */
 // console.log(firstName, lastName);   // undefined undefined
 
 // You can still acheive the desired result using the following syntax.
-const fullName = { first: "Ramsey", last: "Stephenson"};
-const {first: firstName, last: lastName} = fullName;
+// const fullName = { first: "Ramsey", last: "Stephenson"};
+// const {first: firstName, last: lastName} = fullName;
 
-console.log(firstName, lastName);   // Ramsey Stephenson
+// console.log(firstName, lastName);   // Ramsey Stephenson
+
+
+
+// Array Destructuring
+
+// let alphabets = ["A", "B", "C", "D"];
+// let numbers = [1, 2, 3, 4, 5]
+
+// const newArray = [...alphabets, ...numbers];
+// console.log(newArray);  //["A", "B", "C", "D", 1, 2, 3, 4, 5 ]
+
+
+// Factory Function
+// function sumAndMuliply(a, b) {
+//     return [a+b, a*b]
+// }
+// console.log(sumAndMuliply(5, 6));   // [11, 30]
+
+
+// Destructuring
+// function sumAndMuliply(a, b) {
+//     return [a+b, a*b]
+// }
+
+// const [sum, multiply] = sumAndMuliply(5, 6)
+
+// console.log(sum);
+// console.log(multiply);
+// // Result:
+// // 11
+// // 30
+
+
+// Object Destructuring
+
+// const personOne = {
+//     name: 'Andy',
+//     age: 26,
+//     address: {
+//         location: 'Earth',
+//         state: 'One of them'
+//     }
+// };
+
+// const personTwo = {
+//     name: 'Cristen',
+//     age: 24,
+//     address: {
+//         location: 'Mars',
+//         state: 'Another One of them'
+//     } 
+// };
+
+
+// // Destructuring
+// const { name, age} = personOne;
+
+// console.log(name);  // Andy
+// console.log(age);   // 26
+
+
+// const {name: firstName, address: { location } } = personTwo;
+// console.log(firstName);
+// console.log(location);
+
+// // Cristen
+// // Mars
+
+
+
+// Function Object Destructuring
+
+const personOne = {
+    name: 'Albert',
+    age: 26,
+    address: {
+        location: 'USA',
+        state: 'California'
+    }
+};
+
+// function prinUser(user){
+//     console.log(user);
+// }
+// prinUser(personOne);
+
+/* Result: {
+  name: 'Albert',
+  age: 26,
+  address: { location: 'USA', state: 'California' }
+}
+ */
+
+function prinUser({ name, age }){
+    console.log(`Name is ${name}. Age is ${age}`);
+}
+prinUser(personOne);    // Name is Albert. Age is 26.
+
+
