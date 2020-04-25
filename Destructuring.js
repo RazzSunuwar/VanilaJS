@@ -34,9 +34,9 @@
 
 
 // Rest Operator to Reassign Array Elements
-const [q, r, ...rest] = [1, 2, 3, 4, 5];    //Because of 3 dot rest elements go inside the arrray
-console.log(q, r);  // 1 2
-console.log(rest)   // [3, 4, 5 ]
+// const [q, r, ...rest] = [1, 2, 3, 4, 5];    //Because of 3 dot rest elements go inside the arrray
+// console.log(q, r);  // 1 2
+// console.log(rest)   // [3, 4, 5 ]
 
 
 
@@ -51,3 +51,48 @@ console.log(rest)   // [3, 4, 5 ]
 // const profileUpdate = ({ name, age, nationality, location }) => {
 
 // }
+
+
+
+// Destructuring Assignment syntax is a JavaScript expression that makes it possible
+// to unpack values or properties from array or objects.
+
+// Destructuring ES5
+
+// let fullName = ["Ramsey", "Stephenson"]
+// let firstName = fullName[0]
+// let lastName = fullName[1]
+
+// console.log(firstName, lastName);   // Ramsey Stephenson
+
+
+// Destructuring ES6
+
+// const fullName = ["Ramsey", "Stephenson"];
+// const [firstName, lastName] = fullName;
+// console.log(firstName, lastName);   // Ramsey Stephenson
+
+
+// The examples above show the benefit of using the ES6 Destructuring Assignment.
+// You can also use Destructuring on objects using a similar syntax
+
+// const fullName = { first: "Ramsey", last: "Stephenson" };
+// const {first, last} = fullName;
+// console.log(first, last);   // Ramsey Stephenson
+
+
+
+/* Object Destructuring Assignment is a little bit different because the object must have
+properties with the names you are assigning. Therefore the code below would not work as
+intended. */
+
+// const fullName = { first: "Ramsey", last: "Stephenson"};
+// const {firstName, lastName} = fullName;
+
+// console.log(firstName, lastName);   // undefined undefined
+
+// You can still acheive the desired result using the following syntax.
+const fullName = { first: "Ramsey", last: "Stephenson"};
+const {first: firstName, last: lastName} = fullName;
+
+console.log(firstName, lastName);   // Ramsey Stephenson
