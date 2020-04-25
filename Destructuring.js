@@ -196,3 +196,6 @@ function prinUser({ name, age }){
 prinUser(personOne);    // Name is Albert. Age is 26.
 
 
+
+
+
