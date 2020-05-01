@@ -13,3 +13,23 @@ if(age >= 18) {
 // Ternary Operator
 console.log((age >= 18) ? "You are an adult!" : "You are a kid.");
 // You are an adult!
+
+
+let stop;
+
+age > 18 ? (
+    console.log("Ok, you can go."),
+    stop = false
+) : (
+    console.log("Sorry, you are much too young!"),
+    stop = true
+);
+// Ok, you can go.
+
+let firstCheck = false,
+secondCheck = false,
+access = firstCheck ? "Access denied" : secondCheck ? "Access denied" : "Access granted";
+console.log(access);
+// Ok, you can go.
+
+
