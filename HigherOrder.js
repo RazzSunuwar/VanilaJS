@@ -74,14 +74,33 @@ const ages = [22, 11, 50, 5, 12, 14, 32, 44, 77, 3, 40, 100, 60, 26, 27];
 // });
 // console.log(testMap);
 
-const testMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
-console.log(testMap);
+// const testMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+// console.log(testMap);
 
-const ageMap = ages
-.map(age => Math.sqrt(age))
-.map(age => age * 2);
+// const ageMap = ages
+// .map(age => Math.sqrt(age))
+// .map(age => age * 2);
 
-console.log(ageMap);
+// console.log(ageMap);
 
 // sort()
+// Sort companies by start year
+// const sortedCompanies = companies.sort(function(c1, c2) {
+//     if (c1.start > c2.start) {
+//         return 1;
+//     } else {    
+//         return -1;
+//     }
+// });
+// console.log(sortedCompanies);
+
+// By arrow function and ternary operator
+// const sortedCompanies = companies.sort((a, b)  => (a.start > b.start ? 1: -1));
+// console.log(sortedCompanies);   
+
+// Sort ages
+const sortAges = ages.sort((a, b) => a - b);
+console.log(sortAges); 
+
+
 // reduce()
