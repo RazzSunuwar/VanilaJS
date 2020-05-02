@@ -54,14 +54,34 @@ const ages = [22, 11, 50, 5, 12, 14, 32, 44, 77, 3, 40, 100, 60, 26, 27];
 // console.log(retailCompanies);
 
 // Get 80s companies
-const eightiesCompanies = companies.filter(company => (company.start >= 
-    1980 && company.start < 1990));
-    console.log(eightiesCompanies);
+// const eightiesCompanies = companies.filter(company => (company.start >= 
+//     1980 && company.start < 1990));
+//     console.log(eightiesCompanies);
 
-    // Get companies that lasted 10 years or more
-    const lastedTenYears = companies.filter(company => (company.end - company.start >= 10));
-    console.log(lastedTenYears);
-    
+//     // Get companies that lasted 10 years or more
+//     const lastedTenYears = companies.filter(company => (company.end - company.start >= 10));
+//     console.log(lastedTenYears);
+
 // map()
+// Create array of company names
+// const companyNames = companies.map(function(company) {
+//     return company.name;
+// });
+// console.log(companyNames);
+
+// const testMap = companies.map(function(company) {
+//     return `${company.name} [${company.start} - ${company.end}]`;
+// });
+// console.log(testMap);
+
+const testMap = companies.map(company => `${company.name} [${company.start} - ${company.end}]`);
+console.log(testMap);
+
+const ageMap = ages
+.map(age => Math.sqrt(age))
+.map(age => age * 2);
+
+console.log(ageMap);
+
 // sort()
 // reduce()
