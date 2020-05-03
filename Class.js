@@ -13,8 +13,8 @@
 */
 
 /* Constructor: The constructor method is a special method for creating and initializing 
-an object created within a class. There can be only one special method within the "constructor" in a class.
-*/
+an object created within a class. There can be only one special method within the "constructor" 
+in a class.*/
 
 class Mobile {
   // class Declaration
