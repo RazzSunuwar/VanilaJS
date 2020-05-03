@@ -1,16 +1,16 @@
-// function createQuote(quote, callback){
-//   let myQoute = "Like i always say" + quote;
-//   callback(myQoute);   //2
-// }
-//
-// function logQuote(quote){
-//   console.log(quote);
-// }
-//
-// createQuote("eat your vegetables!", logQuote);  //1
-// // createQuote("eat your vegetables!", function(quote){
-// //   console.log(quote)
-// // });
+function createQuote(quote, callback){
+  let myQoute = "Like i always say " + quote;
+  callback(myQoute);   //2
+}
+
+function logQuote(quote){
+  console.log(quote);
+}
+
+createQuote("eat your vegetables!", logQuote);  //1
+// createQuote("eat your vegetables!", function(quote){
+//   console.log(quote)
+// });
 
 
 // Example that simulates a request to a server:
