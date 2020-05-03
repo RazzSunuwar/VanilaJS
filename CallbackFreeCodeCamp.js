@@ -14,17 +14,21 @@
 
 
 // Example that simulates a request to a server:
-function serverRequest(query, callback){
-  setTimeout(function(){
-    let response = query + "full";
-    callback(response);
-  })
-}
+// function serverRequest(query, callback){
+//   setTimeout(function(){
+//     let response = query + "full";
+//     callback(response);
+//   }, 2000)
+// }
 
-function getResults(results){
-  console.log("Response to the server: " + results)
-}
+// function getResults(results){
+//   console.log("Response to the server: " + results)
+// }
 
-serverRequest("The glass is half ",getResults)
+// serverRequest("The glass is half ",getResults)
 
-// Result: Response to the server: The glass is half full
+// // Result: Response to the server: The glass is half full
+
+
+
+// Callback Practice
