@@ -32,3 +32,12 @@ createQuote("eat your vegetables!", logQuote);  //1
 
 
 // Callback Practice
+function createSentence(quote, callback) {
+  let mysentence = "Helllo world " + quote;
+  callback(mysentence);
+}
+
+function logSentence(quote){
+  console.log(quote)
+}
+createSentence("Planet earth is beautiful", logSentence);
