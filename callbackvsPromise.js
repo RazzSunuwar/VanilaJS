@@ -18,28 +18,61 @@
 
 
 // Double callback
+// const userLeft = false;
+// const userWatchingCatMeme = false;
+
+// function watchTutorialCallback(callback, errorCallback) {
+//     if(userLeft) {
+//         errorCallback({
+//             name: 'User Left',
+//             message: 'Sad'
+//         })
+//     }else if(userWatchingCatMeme) {
+//         errorCallback({
+//             name: 'User Watching Cat Meme',
+//             message: 'Its Funny Meme'
+//         })
+//     } else {
+//         callback('Thumbs up and Suscribe');
+//     }
+// }
+
+// watchTutorialCallback((message) => {
+//     console.log('Success', message)
+// }, (error) => {
+//     console.log(error.name + ' ' + error.message)
+// });
+// // Result: Success Thumbs up and Suscribe
+
+
+// Promise
 const userLeft = false;
 const userWatchingCatMeme = false;
 
-function watchTutorialCallback(callback, errorCallback) {
-    if(userLeft) {
-        errorCallback({
-            name: 'User Left',
-            message: 'Sad'
-        })
-    }else if(userWatchingCatMeme) {
-        errorCallback({
-            name: 'User Watching Cat Meme',
-            message: 'Its Funny Meme'
-        })
-    } else {
-        callback('Thumbs up and Suscribe');
-    }
+function watchTutorialPromise() {
+    return new Promise ((resolve, reject) =>{
+        if(userLeft) {
+            reject({
+                name: 'User Left',
+                message: 'Sad'
+            })
+        }else if(userWatchingCatMeme) {
+            reject({
+                name: 'User Watching Cat Meme',
+                message: 'Its Funny Meme'
+            })
+        } else {
+            resolve('Thumbs up and Suscribe');
+        }
+    })
 }
 
-watchTutorialCallback((message) => {
+watchTutorialPromise()
+.then((message) => {
     console.log('Success', message)
-}, (error) => {
+})
+.catch((error) => {
     console.log(error.name + ' ' + error.message)
 });
 // Result: Success Thumbs up and Suscribe
+
