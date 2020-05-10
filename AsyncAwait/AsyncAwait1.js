@@ -41,5 +41,29 @@ using async/await: */
 // })();
 
 
- 
+ /* Like promise.then, await allows us to use thenable objects (those with a callable then method). 
+ The idea is that a third-party object may not be a promise, but promise-compatible: 
+ if it supports .then, that’s enough to use it with await. */
+
+// Here’s a demo Thenable class; the await below accepts its instances:
+class Thenable{
+    constructor(num) {
+        this.num = num;
+    }
+    then(resolve, reject) {
+        // resolve with this.num*2 after 1000ms
+        setTimeout(() => resolve(this.num * 2), 1000); //(*)
+    }
+};
+
+async function f() {
+    let result = await new Thenable(1);
+    alert(result);
+}
+f();
+
+/* if await gets a non-promise object with .then, it calls that method providing the built-in 
+functions resolve and reject as arguments (just as it does a regular Promise executor). Then
+awaits until one of them is called (in the example above it happens in the line (*) 
+and then proceeds with the result.) */
 
