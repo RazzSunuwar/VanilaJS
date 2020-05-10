@@ -45,5 +45,19 @@ than promise.then, easier to read and write. */
 
 
 
+// Can't use await in regular functions
+// if we try use await in non-async function, there would be a syntax error:
+function f() {
+    let promise = Promise.resolve(1);
+    let result = await promise; //syntax error
+}
+
+/* We will get this if we do not put async before a function. As said, await only works inside 
+an async function. */
+
+
+
+
+
 
 
