@@ -15,10 +15,24 @@ Note: this method does not change the original array. */
 
 // Syntax:- map(callback(currentValue, index, array), thisValue);
 
-var arrayA = [10, 20, 30, 40, 50, 60, 70, 80];
-var newArray = arrayA.map(function(value) {
-	value ++;
-	return value++;
-});
-console.log(arrayA);	//[10, 20, 30, 40, 50, 60, 70, 80]
-console.log(newArray);	//[11, 21, 31, 41, 51, 61, 71, 81]
+// var arrayA = [10, 20, 30, 40, 50, 60, 70, 80];
+// var newArray = arrayA.map(function(value) {
+// 	value ++;
+// 	return value++;
+// });
+// console.log(arrayA);	//[10, 20, 30, 40, 50, 60, 70, 80]
+// console.log(newArray);	//[11, 21, 31, 41, 51, 61, 71, 81]
+
+
+
+let arr = [
+{price: "100", product: "Laptop"},
+{price: "100", product: "PC"},
+{price: "100", product: "Laptop"},
+{price: "100", product: "Smart-watch"}
+];
+
+let newArray = arr.map(function(value){
+	return value;
+})
+console.log(newArray);
