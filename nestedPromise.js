@@ -13,14 +13,14 @@ function askForNote(topic){
 
 function printNote(pdfNote){
 	return new Promise(function(resolve, reject){
-			console.log("Note is in stationary");
-			console.log("Shopkeeper promise to callback after he finished printing note");
-			let electricity = true;
-			if(electricity) {
-				setTimeout(function(){
-					resolve('printNote')
-				}, 3000);
-			}
+		console.log("Note is in stationary");
+		console.log("Shopkeeper promise to callback after he finished printing note");
+		let electricity = true;
+		if(electricity) {
+			setTimeout(function(){
+				resolve('printNote')
+			}, 3000);
+		}
 	})
 }
 
