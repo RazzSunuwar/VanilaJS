@@ -19,13 +19,13 @@ McLaren
 
 //self Practice
 
-let bikes = ["Ducati", "Honda", "Yamaha", "Kawasaki", "Suzuki"];
-let text = " ";
-let i;
-for(i=0; i <= bikes.length; i++){
-    text += bikes[i] + "<br>"
-    document.getElementById("demo").innerHTML = text;
-}
+// let bikes = ["Ducati", "Honda", "Yamaha", "Kawasaki", "Suzuki"];
+// let text = " ";
+// let i;
+// for(i=0; i <= bikes.length; i++){
+//     text += bikes[i] + "<br>"
+//     document.getElementById("demo").innerHTML = text;
+// }
 
 // Result:
 /*
@@ -35,3 +35,22 @@ Yamaha
 Kawasaki
 Suzuki
 */
+
+let i;
+let text = " ";
+for(i=0; i<= 5; i++){
+    text += i + "<br>"  
+    document.getElementById("demo").innerHTML = text;
+}
+
+/*
+0
+1
+2
+3
+4
+5
+*/
+
+
+
