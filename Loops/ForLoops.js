@@ -8,6 +8,15 @@
 // }
 // document.getElementById("demo").innerHTML = text;
 
+// Result:
+/*
+Buggati
+Ferrari
+Lamborgini
+Tesla
+McLaren
+*/
+
 //self Practice
 
 let bikes = ["Ducati", "Honda", "Yamaha", "Kawasaki", "Suzuki"];
@@ -17,3 +26,12 @@ for(i=0; i <= bikes.length; i++){
     text += bikes[i] + "<br>"
     document.getElementById("demo").innerHTML = text;
 }
+
+// Result:
+/*
+Ducati
+Honda
+Yamaha
+Kawasaki
+Suzuki
+*/
