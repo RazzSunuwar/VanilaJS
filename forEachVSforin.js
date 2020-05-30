@@ -31,27 +31,27 @@ will have an Enumerable value --- if that value is set to true, then the propert
 
 
 
-const obj = {
-    a : 1,
-    b : 2,
-    c : 3,
-    d : 4
-}
-
-// for (let elem in obj){
-//     console.log(obj[elem])
+// const obj = {
+//     a : 1,
+//     b : 2,
+//     c : 3,
+//     d : 4
 // }
-/*
-1
-2
-3
-4
-*/ 
 
-// Better yet, we can log out both the key and value pair:
-for (let elem in obj){
-    console.log(`${elem} = ${obj[elem]}`);
-}
+// // for (let elem in obj){
+// //     console.log(obj[elem])
+// // }
+// /*
+// 1
+// 2
+// 3
+// 4
+// */ 
+
+// // Better yet, we can log out both the key and value pair:
+// for (let elem in obj){
+//     console.log(`${elem} = ${obj[elem]}`);
+// }
 
 /*
 a = 1
@@ -60,6 +60,33 @@ c = 3
 d = 4
 */
 
+
+// Arrays are objects too
+// const arr = ['Ducati', "Zero", "Yamana"];
+// for (let i in arr) {
+//     console.log(arr[i])
+// }
+/*
+Ducati
+Zero
+Yamana
+*/
+
+
+/* And since each character in a string has an index, we can even use for...in on strings. 
+Check this out: */
+const string = 'hello';
+
+for (let character in string) {
+    console.log(string[character])
+};
+/* 
+h
+e
+l
+l
+o
+*/ 
 
 
 
