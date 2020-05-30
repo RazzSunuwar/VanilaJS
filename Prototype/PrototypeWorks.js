@@ -14,9 +14,10 @@
 
 
 function Mobile(){
-
+    this.a = 20;
 }
+
 Mobile.prototype.a = 10;
 
 var lg = new Mobile();
-console.log(lg.a);  // console 10
+console.log(lg.a);  //20
