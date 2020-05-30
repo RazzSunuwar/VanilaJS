@@ -38,14 +38,28 @@ const obj = {
     d : 4
 }
 
-for (let elem in obj){
-    console.log(obj[elem])
-}
+// for (let elem in obj){
+//     console.log(obj[elem])
+// }
 /*
 1
 2
 3
 4
 */ 
+
+// Better yet, we can log out both the key and value pair:
+for (let elem in obj){
+    console.log(`${elem} = ${obj[elem]}`);
+}
+
+/*
+a = 1
+b = 2
+c = 3
+d = 4
+*/
+
+
 
 
