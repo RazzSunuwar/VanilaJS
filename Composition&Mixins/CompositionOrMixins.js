@@ -40,6 +40,12 @@
 
 
 
+// Mixin Function
+function mixin (target, ...sources){
+    Object.assign(target, ...sources);
+    
+}
+
 // Composition or Mixin
 var eating = {
     eat: function(){
@@ -59,19 +65,36 @@ var talking = {
     }
 }
 
-var starting = {
-    start: function(){
-        return "RoboCop start <br>";
-    }
+// var starting = {
+//     start: function(){
+//         return "RoboCop start <br>";
+//     }
+// }
+
+
+
+// Human Class
+var Human = function(){
+
 }
 
-var Mark = Object.assign({}, eating, walking, talking);
+// Robot Class
+var Robot = function(){}
 
-var RoboCop = Object.assign({}, starting, walking, talking);
+// Compositing features to Human
+mixin(Human.prototype, eating, walking, talking);
+
+var Mark= new Human();
+
+// Compositing features to Robot
+mixin(Robot.prototype, walking, talking);
+
+// var Mark= new Human();
+var RoboCop = new Robot();
+
 document.write(Mark.eat());
 document.write(Mark.walk());
 document.write(Mark.talk());
 
-document.write(RoboCop.start());
 document.write(RoboCop.walk());
 document.write(RoboCop.talk());
