@@ -7,7 +7,12 @@ const numbers = [1, -1, 2, 3];
 // 	sum = sum + n;
 // console.log(sum);	//5
 
-let sum =numbers.reduce((accumulator, currentValue) => {
+// let sum = numbers.reduce((accumulator, currentValue) => {
+// 	return accumulator + currentValue
+// }, 0);		//Note: 0 is the initial value of accumulator
+// console.log(sum);
+
+let sum = numbers.reduce((accumulator, currentValue) => {
 	return accumulator + currentValue
-}, 0);		//Note: 0 is the initial value of accumulator
+});
 console.log(sum);
