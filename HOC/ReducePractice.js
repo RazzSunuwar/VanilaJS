@@ -10,9 +10,7 @@ const numbers = [1, -1, 2, 3];
 // let sum = numbers.reduce((accumulator, currentValue) => {
 // 	return accumulator + currentValue
 // }, 0);		//Note: 0 is the initial value of accumulator
-// console.log(sum);
+// console.log(sum); //5
 
-let sum = numbers.reduce((accumulator, currentValue) => {
-	return accumulator + currentValue
-});
-console.log(sum);
+let sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);		
+console.log(sum);	//5
