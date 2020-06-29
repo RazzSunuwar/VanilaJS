@@ -1,5 +1,5 @@
 // The valule of the keyword 'this' is usually determined by how a function is called.
-// It's important to know that this may be different each time the function is called.
+// It's important to know that 'this' may be different each time the function is called.
 
 // // Global Object
 // var myName = 'Ray';
@@ -8,12 +8,30 @@
 
 // console.log(this);
 
-function test(){
+// function test(){
+//     console.log(this);
+// };
+// test(); //global object
+
+
+// method => obj
+
+const video = {
+    title: 'a',
+    play() {
+        console.log(this);
+    }
+};
+
+video.stop = function(){
     console.log(this);
 };
-test(); //global object
+
+video.stop();
 
 
+
+// Regular function => global (window, global)
 
 
 
