@@ -16,6 +16,22 @@
 
 // method => obj
 
+// const video = {
+//     title: 'a',
+//     play() {
+//         console.log(this);
+//     }
+// };
+
+// video.stop = function(){
+//     console.log(this);
+// };
+
+// video.stop();
+
+
+
+// Regular function => global (window, global)
 const video = {
     title: 'a',
     play() {
@@ -23,15 +39,13 @@ const video = {
     }
 };
 
-video.stop = function(){
+function Video(title){
+    this.title = title;
     console.log(this);
 };
 
-video.stop();
+const v = new Video('b');
 
-
-
-// Regular function => global (window, global)
 
 
 
