@@ -8,6 +8,17 @@ while (test condition)
 }
 */
 
+ /*
+ var i = 0;
+ while(true)
+ {
+     if(i===3)
+     break;
+     document.write(i);
+     i++;
+ }
+ */
+
 let i = 0;
 while(i<5)
 {
