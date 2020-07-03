@@ -16,22 +16,32 @@ while (test condition)
      break;
      document.write(i);
      i++;
- }
- */
-
-let i = 0;
-while(i<5)
-{
-    document.write(i);
-    i++;
-    document.write("<br>");
 }
-
-//Result: 
-/*
-0
-1
-2
-3
-4
 */
+
+// let i = 0;
+// while(i<5)
+// {
+//     document.write(i);
+//     i++;
+//     document.write("<br>");
+// }
+
+// //Result: 
+// /*
+// 0
+// 1
+// 2
+// 3
+// 4
+// */
+
+let text = "";
+let i = 0;
+
+do {
+    text += i;
+    i++;
+}
+while (i < 10);
+console.log(text);  //0123456789
