@@ -11,8 +11,17 @@
 
 // let x = this;   //Global object
 
-// this in a function (Default)
-document.getElementById("demo").innerHTML = myFunction();
-function myFunction(){
-    return this;    //Result: [object Window]
-}
+// // this in a function (Default)
+// document.getElementById("demo").innerHTML = myFunction();
+// function myFunction(){
+//     return this;    //Result: [object Window]
+// }
+
+// // this in a Function (Strict)
+// "use strict";
+// document.getElementById("demo").innerHTML = myFunction();
+// function myFunction() {
+//     return this;
+// }   //undefined
+
+
