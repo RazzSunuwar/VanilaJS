@@ -24,4 +24,8 @@
 //     return this;
 // }   //undefined
 
+// this in Event Handlers
+<button onclick="this.style.display='none'">Click to Remove Me !
+</button>
+
 
