@@ -9,7 +9,7 @@
 let cars = ["Lamborgini", "Ferrari", "Buggati", "Telsa", "Ford"];
 let text = "";
 for( let i=0; i< cars.length; i++){
-        text += cars[i] + "<br>"
-        document.getElementById("demo").innerHTML = text;
-    }
+    text += cars[i] + "<br>"
+    document.getElementById("demo").innerHTML = text;
+}
 
