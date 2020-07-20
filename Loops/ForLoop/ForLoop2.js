@@ -22,24 +22,35 @@
 // }
 // document.getElementById("demo").innerHTML = text;
 
-function Mobile(model_no){
-    this.model = model_no;
-    this.color = "white";
-    this.ram = "8GB";
-    this.price = function(){
-        document.write(this.model+ "price Rs.3000 <br>");
-    };
-};
+// function Mobile(model_no){
+//     this.model = model_no;
+//     this.color = "white";
+//     this.ram = "8GB";
+//     this.price = function(){
+//         document.write(this.model+ "price Rs.3000 <br>");
+//     };
+// };
 
-let samsung = new Mobile("Galaxy");
-let nokia = new Mobile("Lumia 3310");
+// let samsung = new Mobile("Galaxy");
+// let nokia = new Mobile("Lumia 3310");
 
-// for (var specs in nokia){
-//         if(typeof nokia[specs] !== "function"){
-//         document.write(specs + " " + nokia[
-//         specs] + "<br>");
-//     }
-// }
+// // for (var specs in nokia){
+// //         if(typeof nokia[specs] !== "function"){
+// //         document.write(specs + " " + nokia[
+// //         specs] + "<br>");
+// //     }
+// // }
 
-document.write(Object.keys(nokia));
+// document.write(Object.keys(nokia));
+
+var myObject = ["Andy", "Brad", 50, "Cristian"];
+for(let value of myObject){
+    document.write(value + "<br>");
+}
+/* 
+Andy
+Brad
+50
+Cristian
+*/
 
