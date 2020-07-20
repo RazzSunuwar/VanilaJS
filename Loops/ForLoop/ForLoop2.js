@@ -34,10 +34,12 @@ function Mobile(model_no){
 let samsung = new Mobile("Galaxy");
 let nokia = new Mobile("Lumia 3310");
 
-for (var specs in nokia){
-        if(typeof nokia[specs] !== "function"){
-        document.write(specs + " " + nokia[
-        specs] + "<br>");
-    }
-}
+// for (var specs in nokia){
+//         if(typeof nokia[specs] !== "function"){
+//         document.write(specs + " " + nokia[
+//         specs] + "<br>");
+//     }
+// }
+
+document.write(Object.keys(nokia));
 
