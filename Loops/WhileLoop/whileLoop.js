@@ -19,16 +19,31 @@
 // The number is 9
 // */
 
-let count = 1;
-while (count < 10){
-    console.log(count); 
-    count += 2;
-}
+// let count = 1;
+// while (count < 10){
+//     console.log(count); 
+//     count += 2;
+// }
 
-/*
+// /*
+// 1
+// 3
+// 5
+// 7
+// 9
+// */
+
+var i = 0;
+while (true){
+    if(i == 3){
+        break;
+    }
+    document.write(i);
+    i++;
+    document.write("<br>");
+};
+/* 
+0
 1
-3
-5
-7
-9
+2
 */
