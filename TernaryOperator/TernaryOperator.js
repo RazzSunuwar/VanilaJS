@@ -32,9 +32,20 @@
 // console.log(access);
 // // Ok, you can go.
 
-function foo(bar){
-    bar = typeof(bar) !== "undefined" ? bar : 10;
-    console.log(bar);
-}
-foo();  // 10
-foo(20);    //20
+// // Set default parameters
+// function foo(bar){
+//     bar = typeof(bar) !== "undefined" ? bar : 10;
+//     console.log(bar);
+// }
+// foo();  // 10
+// foo(20);    //20
+
+// Use multiple JavaScript ternary operators
+let speed = 90;
+let message = speed >= 120 ? "Too Fast" : (speed >= 80 ? "Fast" : "Ok");
+console.log(message);
+
+
+
+
+
