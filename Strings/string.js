@@ -14,5 +14,9 @@
 // console.log(fullName);
 
 // 2 substr()
-let str = "JavaScript World !";
-console.log(str.substr(0, 10)); // JavaScript
+// let str = "JavaScript World !";
+// console.log(str.substr(0, 10)); // JavaScript
+
+// 3 indexof()
+let str = "This is a string";
+console.log(str.indexOf("string")); //string
