@@ -18,5 +18,9 @@
 // console.log(str.substr(0, 10)); // JavaScript
 
 // 3 indexof()
-let str = "This is a string";
-console.log(str.indexOf("string")); //string
+// let str = "This is a string";
+// console.log(str.indexOf("string")); //string
+
+// 4 lastIndexOf()
+let str = "Hello Coders! lets rules the world."
+console.log(str.lastIndexOf('r'));  //31
