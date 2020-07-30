@@ -22,5 +22,10 @@
 // console.log(str.indexOf("string")); //string
 
 // 4 lastIndexOf()
-let str = "Hello Coders! lets rules the world."
-console.log(str.lastIndexOf('r'));  //31
+// let str = "Hello Coders! lets rules the world."
+// console.log(str.lastIndexOf('r'));  //31
+
+// 5 trim()
+let myTrimStr = " Hello World ";
+let strippedString = myTrimStr.trim();
+console.log(strippedString);    // Hello World 
