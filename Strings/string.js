@@ -26,6 +26,14 @@
 // console.log(str.lastIndexOf('r'));  //31
 
 // 5 trim()
-let myTrimStr = " Hello World ";
-let strippedString = myTrimStr.trim();
-console.log(strippedString);    // Hello World 
+// let myTrimStr = " Hello World ";
+// let strippedString = myTrimStr.trim();
+// console.log(strippedString);    // Hello World 
+
+// 6 localeCompare
+// console.log("A".localeCompare("B")); // -1
+// console.log("B".localeCompare("B"));    // 0
+// console.log("C".localeCompare("B"));    // 1
+
+
+
