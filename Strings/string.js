@@ -35,12 +35,19 @@
 // console.log("B".localeCompare("B"));    // 0
 // console.log("C".localeCompare("B"));    // 1
 
-// 7 match()
-function  myFunction(){
-    let str = "The rain in NEPAL statys manily in the plain.";
-    let res = str.match(/PAL/gi);
-    console.log(res);   // PAL
-}
+// // 7 match()
+// function  myFunction(){
+//     let str = "The rain in NEPAL statys manily in the plain.";
+//     let res = str.match(/PAL/gi);
+//     console.log(res);   // PAL
+// }
+
+// Search
+let str = "This is a test of search()";
+let pos = str.search(/is/);
+console.log(pos);   //2
+
+
 
 
 
