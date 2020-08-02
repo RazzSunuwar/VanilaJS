@@ -54,9 +54,14 @@
 // console.log(newStr);    // a baby kicks a ball
 
 // 10 split()
+// let str = "JavaScript String Splict()";
+// let subStrings = str.split(' ');
+// console.log(subStrings);    // [ 'JavaScript', 'String', 'Splict()' ]
+
+// 10 Returning a limited number of substrings examples
 let str = "JavaScript String Splict()";
-let subStrings = str.split(' ');
-console.log(subStrings);    // [ 'JavaScript', 'String', 'Splict()' ]
+let subStrings = str.split(' ', 2); // Seperator and limit inside parenthesis
+console.log(subStrings); //[ 'JavaScript', 'String' ]
 
 
 
