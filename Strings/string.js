@@ -59,9 +59,17 @@
 // console.log(subStrings);    // [ 'JavaScript', 'String', 'Splict()' ]
 
 // 10 Returning a limited number of substrings examples
-let str = "JavaScript String Splict()";
-let subStrings = str.split(' ', 2); // Seperator and limit inside parenthesis
-console.log(subStrings); //[ 'JavaScript', 'String' ]
+// let str = "JavaScript String Splict()";
+// let subStrings = str.split(' ', 2); // Seperator and limit inside parenthesis
+// console.log(subStrings); //[ 'JavaScript', 'String' ]
+
+// 10 Split string using a regular expression example
+let str = "Hello World! its me anonymous. Do you know me?";
+let sentences = str.split(/!,.,?/);
+console.log(sentences); //[ 'Hello World! its me anonymous. Do you know me?' ]
+
+
+
 
 
 
