@@ -48,10 +48,15 @@
 // console.log(pos);   //2
 
 // 9 replace()
-let str = "the baby kicks the ball";
-let newStr = str.replace(/the/g, "a");
-console.log(str);   //the baby kicks the ball
-console.log(newStr);    // a baby kicks a ball
+// let str = "the baby kicks the ball";
+// let newStr = str.replace(/the/g, "a");
+// console.log(str);   //the baby kicks the ball
+// console.log(newStr);    // a baby kicks a ball
+
+// 10 split()
+let str = "JavaScript String Splict()";
+let subStrings = str.split(' ');
+console.log(subStrings);    // [ 'JavaScript', 'String', 'Splict()' ]
 
 
 
