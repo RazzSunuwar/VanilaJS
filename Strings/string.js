@@ -42,10 +42,18 @@
 //     console.log(res);   // PAL
 // }
 
-// Search()
+// 8 Search()
 // let str = "This is a test of search()";
 // let pos = str.search(/is/);
 // console.log(pos);   //2
+
+// 9 replace()
+let str = "the baby kicks the ball";
+let newStr = str.replace(/the/g, "a");
+console.log(str);   //the baby kicks the ball
+console.log(newStr);    // a baby kicks a ball
+
+
 
 
 
