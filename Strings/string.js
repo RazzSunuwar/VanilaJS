@@ -63,10 +63,17 @@
 // let subStrings = str.split(' ', 2); // Seperator and limit inside parenthesis
 // console.log(subStrings); //[ 'JavaScript', 'String' ]
 
-// 10 Split string using a regular expression example
-let str = "Hello World! its me anonymous. Do you know me?";
-let sentences = str.split(/!,.,?/);
-console.log(sentences); //[ 'Hello World! its me anonymous. Do you know me?' ]
+// // 10 Split string using a regular expression example
+// let str = "Hello World! its me anonymous. Do you know me?";
+// let sentences = str.split(/!,.,?/);
+// console.log(sentences); //[ 'Hello World! its me anonymous. Do you know me?' ]
+
+// 11 indexOf()
+let str = "finding substring in string";
+let index = str.indexOf("ing");
+console.log(index); // 4
+
+
 
 
 
