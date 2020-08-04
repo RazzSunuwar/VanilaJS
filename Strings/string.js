@@ -69,19 +69,14 @@
 // console.log(sentences); //[ 'Hello World! its me anonymous. Do you know me?' ]
 
 // 11 indexOf()
-let str = "finding substring in string";
-let index = str.indexOf("ing");
-console.log(index); // 4
+// let str = "finding substring in string";
+// let index = str.indexOf("ing");
+// console.log(index); // 4
 
-
-
-
-
-
-
-
-
-
+// 12 lastIndexOf()
+let str = "JavaScript is the most used programming language."
+let index = str.lastIndexOf('e');
+console.log(index); //47
 
 
 
