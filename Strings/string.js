@@ -74,9 +74,15 @@
 // console.log(index); // 4
 
 // 12 lastIndexOf()
-let str = "JavaScript is the most used programming language."
-let index = str.lastIndexOf('e');
-console.log(index); //47
+// let str = "JavaScript is the most used programming language."
+// let index = str.lastIndexOf('e');
+// console.log(index); //47
+
+// 13 slice()
+let str = "Hello World";
+let mystr = str.slice(6, 11);
+console.log(mystr); //World
+
 
 
 
