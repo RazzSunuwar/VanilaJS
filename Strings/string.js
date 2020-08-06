@@ -79,9 +79,14 @@
 // console.log(index); //47
 
 // 13 slice()
-let str = "Hello World";
-let mystr = str.slice(6, 11);
-console.log(mystr); //World
+// let str = "Hello World";
+// let mystr = str.slice(6, 11);
+// console.log(mystr); //World
+
+// slice()
+let email = "anonymous@gmail.com";
+let myString = email.slice(0, email.indexOf('@'));
+console.log(myString);  // anonymous
 
 
 
