@@ -88,9 +88,13 @@
 // let myString = email.slice(0, email.indexOf('@'));
 // console.log(myString);  // anonymous
 
-let email = "anonymous@gmail.com";
-let myString = email.slice(0, 9);
-console.log(myString);  // anonymous
+// let email = "anonymous@gmail.com";
+// let myString = email.slice(0, 9);
+// console.log(myString);  // anonymous
+
+// 15. includes()
+let string = "Hello World";
+console.log(string.includes("World"));  //true
 
 
 
