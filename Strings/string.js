@@ -93,8 +93,11 @@
 // console.log(myString);  // anonymous
 
 // 15. includes()
-let string = "Hello World";
-console.log(string.includes("World"));  //true
+// let string = "Hello World";
+// console.log(string.includes("World"));  //true
+
+let str = "JavaScript String";
+console.log(str.includes("String", 1));
 
 
 
