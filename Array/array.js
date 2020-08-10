@@ -29,8 +29,14 @@
 // console.log(Brands);    // [ 'MSI', 'ACER' ]
 
 // indexOf()
+// let numbers = [10, 20, 30, 40, 50, 60, 70, 80];
+// console.log(numbers.indexOf(50));   //4
+
+// lastIndexOf()
 let numbers = [10, 20, 30, 40, 50, 60, 70, 80];
-console.log(numbers.indexOf(50));   //4
+console.log(numbers.lastIndexOf(50));   //4
+
+
 
 
 
