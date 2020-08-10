@@ -33,9 +33,26 @@
 // console.log(numbers.indexOf(50));   //4
 
 // lastIndexOf()
-let numbers = [10, 20, 30, 40, 50, 60, 70, 80];
-console.log(numbers.lastIndexOf(50));   //4
+// let numbers = [10, 20, 30, 40, 50, 60, 70, 80];
+// console.log(numbers.lastIndexOf(50));   //4
 
+// // Checking array elements using the for loop
+// let numbers = [1, 3, 5, 7];
+// let result = true;
+// for (let i =0; i< numbers.length; i++){
+//     if (numbers[i] <= 0){
+//         result = false;
+//         break;
+//     }
+// }
+// console.log(result);    // true
+
+// every()
+let myNumbers = [1, 2, 3, 4, 5, 6, 7];
+let result = myNumbers.every(function(e){
+    return e > 0;
+});
+console.log(result);    //true
 
 
 
