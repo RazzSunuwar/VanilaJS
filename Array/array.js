@@ -47,12 +47,28 @@
 // }
 // console.log(result);    // true
 
-// every()
-let myNumbers = [1, 2, 3, 4, 5, 6, 7];
-let result = myNumbers.every(function(e){
-    return e > 0;
-});
-console.log(result);    //true
+// // every()
+// let myNumbers = [1, 2, 3, 4, 5, 6, 7];
+// let result = myNumbers.every(function(e){
+//     return e > 0;
+// });
+// console.log(result);    //true
+
+// some()
+// Array without some() method only using for loop
+let marks = [4, 3, 5, 7, 8, 9, 2, 6];
+
+let lessThanFive = false;
+
+for(let index = 0; index < marks.length; index++){
+    if(marks[index] < 5){
+        lessThanFive = true;
+        break;
+    }
+}
+console.log(lessThanFive);  // true
+
+
 
 
 
