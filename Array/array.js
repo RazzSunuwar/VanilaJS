@@ -76,7 +76,7 @@
 // console.log(lessThanFive);  //True
 
 
-// 1. Check if an element exists in the array
+// Check if an element exists in the array
 // The following exists() function uses the some() method to check if a value exists in an array:
 function exists(value, array){
     return array.some(e => e===value);
@@ -86,6 +86,7 @@ function exists(value, array){
 let marks = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(exists(5, marks));  //true
 console.log(exists(10, marks));  //false
+
 
 
 
