@@ -76,17 +76,25 @@
 // console.log(lessThanFive);  //True
 
 
-// Check if an element exists in the array
-// The following exists() function uses the some() method to check if a value exists in an array:
-function exists(value, array){
-    return array.some(e => e===value);
+// // Check if an element exists in the array
+// // The following exists() function uses the some() method to check if a value exists in an array:
+// function exists(value, array){
+//     return array.some(e => e===value);
 
-}
+// }
 
-let marks = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log(exists(5, marks));  //true
-console.log(exists(10, marks));  //false
+// let marks = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(exists(5, marks));  //true
+// console.log(exists(10, marks));  //false
 
+// sort()
+let numbers = [0, 1, 3, 5, 7, 9, 2, 4, 6, 8];
+numbers.sort(function(a,b){
+    if(a > b) return 1;
+    if(a < b) return -1;
+    return 0;
+});
+console.log(numbers);   // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 
 
