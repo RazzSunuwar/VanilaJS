@@ -87,14 +87,52 @@
 // console.log(exists(5, marks));  //true
 // console.log(exists(10, marks));  //false
 
-// sort()
-let numbers = [0, 1, 3, 5, 7, 9, 2, 4, 6, 8];
-numbers.sort(function(a,b){
-    if(a > b) return 1;
-    if(a < b) return -1;
-    return 0;
+// // sort()
+// let numbers = [0, 1, 3, 5, 7, 9, 2, 4, 6, 8];
+// numbers.sort(function(a,b){
+//     if(a > b) return 1;
+//     if(a < b) return -1;
+//     return 0;
+// });
+// console.log(numbers);   // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// filter()
+let cities = [
+    {name: 'Los Angeles', population: 3792621},
+    {name: 'New York', population: 8175133},
+    {name: 'Chicago', population: 2695598},
+    {name: 'Houston', population: 2099451},
+    {name: 'Philadelphia', population: 1526006}
+];
+
+
+// // Without filter method
+// let bigCities = [];
+// for (let i = 0; i < cities.length; i++){
+//     if(cities[i].population > 3000000) {
+//         bigCities.push(cities[i]);
+//     }
+// }
+// console.log(bigCities);
+/*
+  { name: 'Los Angeles', population: 3792621 },
+  { name: 'New York', population: 8175133 }
+]
+*/
+
+// With filter method
+
+let bigCities = cities.filter(function(e){
+    return e.population > 3000000;
 });
-console.log(numbers);   // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+console.log(bigCities);
+/*
+  { name: 'Los Angeles', population: 3792621 },
+  { name: 'New York', population: 8175133 }
+]
+*/
+
+
 
 
 
