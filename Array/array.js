@@ -97,13 +97,13 @@
 // console.log(numbers);   // [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 // filter()
-let cities = [
-    {name: 'Los Angeles', population: 3792621},
-    {name: 'New York', population: 8175133},
-    {name: 'Chicago', population: 2695598},
-    {name: 'Houston', population: 2099451},
-    {name: 'Philadelphia', population: 1526006}
-];
+// let cities = [
+//     {name: 'Los Angeles', population: 3792621},
+//     {name: 'New York', population: 8175133},
+//     {name: 'Chicago', population: 2695598},
+//     {name: 'Houston', population: 2099451},
+//     {name: 'Philadelphia', population: 1526006}
+// ];
 
 
 // // Without filter method
@@ -120,17 +120,29 @@ let cities = [
 ]
 */
 
-// With filter method
+// // With filter method
 
-let bigCities = cities.filter(function(e){
-    return e.population > 3000000;
-});
-console.log(bigCities);
-/*
-  { name: 'Los Angeles', population: 3792621 },
-  { name: 'New York', population: 8175133 }
-]
-*/
+// let bigCities = cities.filter(function(e){
+//     return e.population > 3000000;
+// });
+// console.log(bigCities);
+// /*
+//   { name: 'Los Angeles', population: 3792621 },
+//   { name: 'New York', population: 8175133 }
+// ]
+// */
+
+// map()
+let circles = [
+  10, 30, 50
+];
+
+function circleArea(radius){
+  return Math.floor(Math.PI * radius * radius);
+}
+
+let areas = circles.map(circleArea);
+console.log(areas); // [ 314, 2827, 7853 ]
 
 
 
