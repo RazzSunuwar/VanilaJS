@@ -132,17 +132,28 @@
 // ]
 // */
 
-// map()
-let circles = [
-  10, 30, 50
-];
+// // map()
+// let circles = [
+//   10, 30, 50
+// ];
 
-function circleArea(radius){
-  return Math.floor(Math.PI * radius * radius);
-}
+// function circleArea(radius){
+//   return Math.floor(Math.PI * radius * radius);
+// }
 
-let areas = circles.map(circleArea);
-console.log(areas); // [ 314, 2827, 7853 ]
+// let areas = circles.map(circleArea);
+// console.log(areas); // [ 314, 2827, 7853 ]
+
+// forEach()
+let ranks = ["A", "B", "C"];
+ranks.forEach(function(e){
+  console.log(e)
+});
+/*
+A
+B
+C
+*/
 
 
 
