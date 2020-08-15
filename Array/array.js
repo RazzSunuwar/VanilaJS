@@ -172,26 +172,42 @@
 // console.log(reduceDemo);  //Sum: 28
 
 
-let shoppingCart = [{
-  product: "Mobile",
-  qty: 1,
-  price: 15000
-},
-{
-  product: "Earphone",
-  qty: 1,
-  price: 500
-},
-{
-  product: "Charger",
-  qty: 1,
-  price: 8000
-}]
+// let shoppingCart = [{
+//   product: "Mobile",
+//   qty: 1,
+//   price: 15000
+// },
+// {
+//   product: "Earphone",
+//   qty: 1,
+//   price: 500
+// },
+// {
+//   product: "Charger",
+//   qty: 1,
+//   price: 8000
+// }]
 
-let total = shoppingCart.reduce((accumulator, current)=>{
-  return accumulator + current.qty * current.price;
-}, 0);
-console.log(total); // 23500
+// let total = shoppingCart.reduce((accumulator, current)=>{
+//   return accumulator + current.qty * current.price;
+// }, 0);
+// console.log(total); // 23500
+
+
+// reduceRight()
+let numbers = [1, 3, 5, 7];
+let sum = numbers.reduceRight(function(accumulator, current){
+  console.log("Accumulator: ", accumulator, "Current:", current);
+  return accumulator + current;
+});
+console.log("Total: ", sum);
+
+/*
+Accumulator:  7 Current: 5
+Accumulator:  12 Current: 3
+Accumulator:  15 Current: 1
+Total:  16
+*/ 
 
 
 
