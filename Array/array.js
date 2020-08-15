@@ -144,16 +144,33 @@
 // let areas = circles.map(circleArea);
 // console.log(areas); // [ 314, 2827, 7853 ]
 
-// forEach()
-let ranks = ["A", "B", "C"];
-ranks.forEach(function(e){
-  console.log(e)
-});
-/*
-A
-B
-C
-*/
+// // forEach()
+// let ranks = ["A", "B", "C"];
+// ranks.forEach(function(e){
+//   console.log(e)
+// });
+// /*
+// A
+// B
+// C
+// */
+
+// reduce()
+
+// sum numbers of array using for loop
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+// let sum = 0;
+// for(let i=0; i<numbers.length; i++){
+//   sum+= numbers[i];
+// }
+// console.log(sum); //Sum: 28
+
+let reduceDemo = numbers.reduce(function(accumulator, current){
+  return accumulator + current;
+})
+
+console.log(reduceDemo);  //Sum: 28
+
 
 
 
