@@ -155,21 +155,43 @@
 // C
 // */
 
-// reduce()
+// // reduce()
 
-// sum numbers of array using for loop
-let numbers = [1, 2, 3, 4, 5, 6, 7];
-// let sum = 0;
-// for(let i=0; i<numbers.length; i++){
-//   sum+= numbers[i];
-// }
-// console.log(sum); //Sum: 28
+// // sum numbers of array using for loop
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// // let sum = 0;
+// // for(let i=0; i<numbers.length; i++){
+// //   sum+= numbers[i];
+// // }
+// // console.log(sum); //Sum: 28
 
-let reduceDemo = numbers.reduce(function(accumulator, current){
-  return accumulator + current;
-})
+// let reduceDemo = numbers.reduce(function(accumulator, current){
+//   return accumulator + current;
+// })
 
-console.log(reduceDemo);  //Sum: 28
+// console.log(reduceDemo);  //Sum: 28
+
+
+let shoppingCart = [{
+  product: "Mobile",
+  qty: 1,
+  price: 15000
+},
+{
+  product: "Earphone",
+  qty: 1,
+  price: 500
+},
+{
+  product: "Charger",
+  qty: 1,
+  price: 8000
+}]
+
+let total = shoppingCart.reduce((accumulator, current)=>{
+  return accumulator + current.qty * current.price;
+}, 0);
+console.log(total); // 23500
 
 
 
