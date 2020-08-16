@@ -194,19 +194,43 @@
 // console.log(total); // 23500
 
 
-// reduceRight()
-let numbers = [1, 3, 5, 7];
-let sum = numbers.reduceRight(function(accumulator, current){
-  console.log("Accumulator: ", accumulator, "Current:", current);
-  return accumulator + current;
-});
-console.log("Total: ", sum);
+// // reduceRight()
+// let numbers = [1, 3, 5, 7];
+// let sum = numbers.reduceRight(function(accumulator, current){
+//   console.log("Accumulator: ", accumulator, "Current:", current);
+//   return accumulator + current;
+// });
+// console.log("Total: ", sum);
 
+// /*
+// Accumulator:  7 Current: 5
+// Accumulator:  12 Current: 3
+// Accumulator:  15 Current: 1
+// Total:  16
+// */ 
+
+
+// JavaScript Multidimensional Array
+let activities = [
+  ["Work", 8],
+  ["Eat", 1],
+  ["Commute", 2],
+  ["Play Game", 1], 
+  ["Sleep", 7]
+];
+
+console.table(activities);
+
+// Result
 /*
-Accumulator:  7 Current: 5
-Accumulator:  12 Current: 3
-Accumulator:  15 Current: 1
-Total:  16
+┌─────────┬─────────────┬───┐
+│ (index) │      0      │ 1 │
+├─────────┼─────────────┼───┤
+│    0    │   'Work'    │ 8 │
+│    1    │    'Eat'    │ 1 │
+│    2    │  'Commute'  │ 2 │
+│    3    │ 'Play Game' │ 1 │
+│    4    │   'Sleep'   │ 7 │
 */ 
 
 
