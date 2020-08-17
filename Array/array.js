@@ -219,19 +219,35 @@ let activities = [
   ["Sleep", 7]
 ];
 
-console.table(activities);
+// console.table(activities);
 
-// Result
+// // Result
+// /*
+// ┌─────────┬─────────────┬───┐
+// │ (index) │      0      │ 1 │
+// ├─────────┼─────────────┼───┤
+// │    0    │   'Work'    │ 8 │
+// │    1    │    'Eat'    │ 1 │
+// │    2    │  'Commute'  │ 2 │
+// │    3    │ 'Play Game' │ 1 │
+// │    4    │   'Sleep'   │ 7 │
+// */ 
+
+activities.push(['study', 2]);
+console.log(activities);
+
 /*
-┌─────────┬─────────────┬───┐
-│ (index) │      0      │ 1 │
-├─────────┼─────────────┼───┤
-│    0    │   'Work'    │ 8 │
-│    1    │    'Eat'    │ 1 │
-│    2    │  'Commute'  │ 2 │
-│    3    │ 'Play Game' │ 1 │
-│    4    │   'Sleep'   │ 7 │
+[
+  [ 'Work', 8 ],
+  [ 'Eat', 1 ],
+  [ 'Commute', 2 ],
+  [ 'Play Game', 1 ],
+  [ 'Sleep', 7 ],
+  [ 'study', 2 ]  // Added new elements here
+]
 */ 
+
+
 
 
 
