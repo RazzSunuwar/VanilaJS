@@ -262,25 +262,38 @@ let activities = [
 // │    5    │    'Sleep'     │ 7 │
 // */ 
 
-activities.forEach(activity => {
-  let percentage = ((activity[1]/ 24) * 100).toFixed();
-  activity[2] = percentage + "%";
-});
+// activities.forEach(activity => {
+//   let percentage = ((activity[1]/ 24) * 100).toFixed();
+//   activity[2] = percentage + "%";
+// });
 
+// console.table(activities);
+
+// /*
+// ┌─────────┬─────────────┬───┬───────┐
+// │ (index) │      0      │ 1 │   2   │
+// ├─────────┼─────────────┼───┼───────┤
+// │    0    │   'Work'    │ 8 │ '33%' │
+// │    1    │    'Eat'    │ 1 │ '4%'  │
+// │    2    │  'Commute'  │ 2 │ '8%'  │
+// │    3    │ 'Play Game' │ 1 │ '4%'  │
+// │    4    │   'Sleep'   │ 7 │ '29%' │
+// └─────────┴─────────────┴───┴───────┘
+// */ 
+
+
+activities.pop();
 console.table(activities);
-
 /*
-┌─────────┬─────────────┬───┬───────┐
-│ (index) │      0      │ 1 │   2   │
-├─────────┼─────────────┼───┼───────┤
-│    0    │   'Work'    │ 8 │ '33%' │
-│    1    │    'Eat'    │ 1 │ '4%'  │
-│    2    │  'Commute'  │ 2 │ '8%'  │
-│    3    │ 'Play Game' │ 1 │ '4%'  │
-│    4    │   'Sleep'   │ 7 │ '29%' │
-└─────────┴─────────────┴───┴───────┘
+┌─────────┬─────────────┬───┐
+│ (index) │      0      │ 1 │
+├─────────┼─────────────┼───┤
+│    0    │   'Work'    │ 8 │
+│    1    │    'Eat'    │ 1 │
+│    2    │  'Commute'  │ 2 │
+│    3    │ 'Play Game' │ 1 │
+└─────────┴─────────────┴───┘
 */ 
-
 
 
 
