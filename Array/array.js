@@ -233,19 +233,36 @@ let activities = [
 // │    4    │   'Sleep'   │ 7 │
 // */ 
 
-activities.push(['study', 2]);
-console.log(activities);
+// activities.push(['study', 2]);
+// console.log(activities);
+
+// /*
+// [
+//   [ 'Work', 8 ],
+//   [ 'Eat', 1 ],
+//   [ 'Commute', 2 ],
+//   [ 'Play Game', 1 ],
+//   [ 'Sleep', 7 ],
+//   [ 'study', 2 ]  // Added new elements here
+// ]
+// */ 
+
+activities.splice(1,0, ["Promgramming", 2]);
+console.table(activities);
 
 /*
-[
-  [ 'Work', 8 ],
-  [ 'Eat', 1 ],
-  [ 'Commute', 2 ],
-  [ 'Play Game', 1 ],
-  [ 'Sleep', 7 ],
-  [ 'study', 2 ]  // Added new elements here
-]
+┌─────────┬────────────────┬───┐
+│ (index) │       0        │ 1 │
+├─────────┼────────────────┼───┤
+│    0    │     'Work'     │ 8 │
+│    1    │ 'Promgramming' │ 2 │
+│    2    │     'Eat'      │ 1 │
+│    3    │   'Commute'    │ 2 │
+│    4    │  'Play Game'   │ 1 │
+│    5    │    'Sleep'     │ 7 │
 */ 
+
+
 
 
 
