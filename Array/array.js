@@ -282,18 +282,38 @@ let activities = [
 // */ 
 
 
-activities.pop();
+// activities.pop();
+// console.table(activities);
+// /*
+// ┌─────────┬─────────────┬───┐
+// │ (index) │      0      │ 1 │
+// ├─────────┼─────────────┼───┤
+// │    0    │   'Work'    │ 8 │
+// │    1    │    'Eat'    │ 1 │
+// │    2    │  'Commute'  │ 2 │
+// │    3    │ 'Play Game' │ 1 │
+// └─────────┴─────────────┴───┘
+// */ 
+
+// Removing elements from the JavaScript multidimensional array
+
+activities.forEach((activity) => {
+  activity.pop(2);
+});
+
 console.table(activities);
 /*
-┌─────────┬─────────────┬───┐
-│ (index) │      0      │ 1 │
-├─────────┼─────────────┼───┤
-│    0    │   'Work'    │ 8 │
-│    1    │    'Eat'    │ 1 │
-│    2    │  'Commute'  │ 2 │
-│    3    │ 'Play Game' │ 1 │
-└─────────┴─────────────┴───┘
+┌─────────┬─────────────┐
+│ (index) │      0      │
+├─────────┼─────────────┤
+│    0    │   'Work'    │
+│    1    │    'Eat'    │
+│    2    │  'Commute'  │
+│    3    │ 'Play Game' │
+│    4    │   'Sleep'   │
 */ 
+
+
 
 
 
