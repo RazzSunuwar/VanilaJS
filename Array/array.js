@@ -315,27 +315,47 @@ let activities = [
 
 // Iterating over elements of the JavaScript multidimensional array
 
-// loop the outer array
-for(let i = 0; i < activities.length; i++) {
-  // get  the size of the inner array
-  var innerArrayLength = activities[i].length;
-  // loop the inner array
-  for (let j = 0; j < innerArrayLength; j++) {
-    console.log("["  + i + "," + j + "] ="  + activities[i][j]);
-  }
-}
+// // loop the outer array
+// for(let i = 0; i < activities.length; i++) {
+//   // get  the size of the inner array
+//   var innerArrayLength = activities[i].length;
+//   // loop the inner array
+//   for (let j = 0; j < innerArrayLength; j++) {
+//     console.log("["  + i + "," + j + "] ="  + activities[i][j]);
+//   }
+// }
+
+// /*
+// [0,0] =Work
+// [0,1] =8
+// [1,0] =Eat
+// [1,1] =1
+// [2,0] =Commute
+// [2,1] =2
+// [3,0] =Play Game
+// [3,1] =1
+// [4,0] =Sleep
+// [4,1] =7
+// */ 
+
+
+// Use ForEach() method twice in place of inner loop and outer loop
+activities.forEach((activity) => {
+  activity.forEach((data) => {
+    console.log(data);
+  })
+});
 
 /*
-[0,0] =Work
-[0,1] =8
-[1,0] =Eat
-[1,1] =1
-[2,0] =Commute
-[2,1] =2
-[3,0] =Play Game
-[3,1] =1
-[4,0] =Sleep
-[4,1] =7
+8
+Eat
+1
+Commute
+2
+Play Game
+1
+Sleep
+7
 */ 
 
 
