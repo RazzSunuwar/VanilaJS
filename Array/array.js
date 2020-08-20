@@ -297,20 +297,45 @@ let activities = [
 
 // Removing elements from the JavaScript multidimensional array
 
-activities.forEach((activity) => {
-  activity.pop(2);
-});
+// activities.forEach((activity) => {
+//   activity.pop(2);
+// });
 
-console.table(activities);
+// console.table(activities);
+// /*
+// ┌─────────┬─────────────┐
+// │ (index) │      0      │
+// ├─────────┼─────────────┤
+// │    0    │   'Work'    │
+// │    1    │    'Eat'    │
+// │    2    │  'Commute'  │
+// │    3    │ 'Play Game' │
+// │    4    │   'Sleep'   │
+// */ 
+
+// Iterating over elements of the JavaScript multidimensional array
+
+// loop the outer array
+for(let i = 0; i < activities.length; i++) {
+  // get  the size of the inner array
+  var innerArrayLength = activities[i].length;
+  // loop the inner array
+  for (let j = 0; j < innerArrayLength; j++) {
+    console.log("["  + i + "," + j + "] ="  + activities[i][j]);
+  }
+}
+
 /*
-┌─────────┬─────────────┐
-│ (index) │      0      │
-├─────────┼─────────────┤
-│    0    │   'Work'    │
-│    1    │    'Eat'    │
-│    2    │  'Commute'  │
-│    3    │ 'Play Game' │
-│    4    │   'Sleep'   │
+[0,0] =Work
+[0,1] =8
+[1,0] =Eat
+[1,1] =1
+[2,0] =Commute
+[2,1] =2
+[3,0] =Play Game
+[3,1] =1
+[4,0] =Sleep
+[4,1] =7
 */ 
 
 
