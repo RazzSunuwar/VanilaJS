@@ -28,14 +28,25 @@
 // Sun
 // */ 
 
-const numbers = [1, 2, 3, 4, 5];
-for (i=0; i < numbers.length; i++){
-    console.log(numbers[i]);
-};
+// const numbers = [1, 2, 3, 4, 5];
+// for (i=0; i < numbers.length; i++){
+//     console.log(numbers[i]);
+// };
+// /*
+// 1
+// 2
+// 3
+// 4
+// 5
+// */ 
+
+const names = ["Andrew", "Brad", "Chris", "David"];
+for(let i = names.length-1; i >= 0; i--){
+    console.log(names[i]);
+}
 /*
-1
-2
-3
-4
-5
+David
+Chris
+Brad
+Andrew
 */ 
