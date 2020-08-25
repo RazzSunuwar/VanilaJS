@@ -26,6 +26,7 @@ do {
     console.log(i);
     i++;
 } while(true);
+
 /*
 0
 1
