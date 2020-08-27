@@ -1,9 +1,10 @@
 let text = "";
-let i;
-for (i =0; i< 10; i++) {
-    if(i === 3) {break; }
+for ( let i = 0; i < 10; i++) {
+    if(i === 3) {
+        break; 
+    }
     text += "The number is " + i + "<br>";
-}
+};
 document.getElementById("demo").innerHTML = text;
 
 /*
