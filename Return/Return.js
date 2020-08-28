@@ -9,7 +9,7 @@ function function_name(para1, para2,...){
 
 
 // Example 1
-function add(a, b){
+const add = (a, b) => {
     return (a + b)
 }
 console.log("Return the answer", add(10, 20));  // Return 30
