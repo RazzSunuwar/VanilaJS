@@ -7,5 +7,7 @@
 
 (function(a, b){ 
     var a = 10;
-    document.write(a + " " + b);
+    console.log(a + " " + b);
 }) (10, 20);
+
+// 10 20
