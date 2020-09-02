@@ -27,7 +27,7 @@
 // 	})
 
 
-function askMoney(amt) {
+const askMoney = (amt) => {
 	var a = new Promise(function(resolve, reject) {
 	 	setTimeout(function() {
 	 		resolve(amt + 1000);
