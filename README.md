@@ -1,2 +1,2 @@
 # VanilaJS
-This repository contains all the practice of the JavaScript.
+This repository contains all the practice files of the JavaScript.
