@@ -32,7 +32,7 @@ let arr = [
 {price: "100", product: "Smart-watch"}
 ];
 
-let newArray = arr.map(function(value){
+let newArray = arr.map((value) => {
 	return value;
 })
 console.log(newArray);
