@@ -91,6 +91,7 @@
 //   firstName: 'Romieo',
 //   lastName: 'Watt',
 // }
+<<<<<<< HEAD
 
 
 // let PersonTwo = {
@@ -113,3 +114,38 @@ let result = add.call(this, 10, 20);
 console.log(result);
 // Result: 30
 
+=======
+
+
+// let PersonTwo = {
+//   firstName: 'Rio',
+//   lastName: 'Watt',
+// }
+
+
+// personFullName = Person.fullName.call(PersonOne);
+// console.log(personFullName);
+
+
+
+// Practice
+let person = {
+  fullName: function(){
+    return this.firstName + " " + this.lastName;
+  }
+};
+
+let firstPerson = {
+  firstName: "Andrew",
+  lastName: "Arshavin"
+};
+
+let secondPerson = {
+  firstName: "Brad",
+  lastName: "Gates"
+};
+
+let personFullName = person.fullName.call(firstPerson);
+console.log(personFullName);  
+// Result: Andrew Arshavin
+>>>>>>> e50058e71ddc1320ebce2e28b8c77fc86699bd53
