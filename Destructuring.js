@@ -190,7 +190,7 @@ const personOne = {
 }
 */
 
-function prinUser({ name, age }){
+const prinUser = ({ name, age }) => {
     console.log(`Name is ${name}. Age is ${age}`);
 }
 prinUser(personOne);    // Name is Albert. Age is 26.
