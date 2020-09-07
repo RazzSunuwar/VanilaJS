@@ -20,5 +20,23 @@ let processStudents = (data, callback) => {
 processStudents(students, function(obj){
     if(obj.score > 90){
         console.log(obj.name + " Passed");
-    }
-})
+    };
+});
+
+let determineTotal = function(){
+    total = 0,
+    count = 0;
+
+    processStudents(students, function(obj){
+        total = total + obj.score;
+        count++;
+    });
+    console.log("Total score: " + total + " and Total Count: " + count);
+};
+
+determineTotal();
+
+/*
+James Passed
+Total score: 154 and Total Count: 2
+*/ 
