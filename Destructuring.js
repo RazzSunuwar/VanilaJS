@@ -169,14 +169,14 @@ intended. */
 
 // Function Object Destructuring
 
-const personOne = {
-    name: 'Albert',
-    age: 26,
-    address: {
-        location: 'USA',
-        state: 'California'
-    }
-};
+// const personOne = {
+//     name: 'Albert',
+//     age: 26,
+//     address: {
+//         location: 'USA',
+//         state: 'California'
+//     }
+// };
 
 // function prinUser(user){
 //     console.log(user);
@@ -190,10 +190,25 @@ const personOne = {
 }
 */
 
-const prinUser = ({ name, age }) => {
-    console.log(`Name is ${name}. Age is ${age}`);
-}
-prinUser(personOne);    // Name is Albert. Age is 26.
+// const prinUser = ({ name, age }) => {
+//     console.log(`Name is ${name}. Age is ${age}`);
+// }
+// prinUser(personOne);    // Name is Albert. Age is 26.
+
+
+// Practice 
+const person = {
+    name: "Brad Traversy",
+    age: 40,
+    address: "USA"
+};
+
+const myFunction = ({ name, age, address }) => {
+    console.log(`My name is ${name}. My age is ${age}. My address is ${address}.`);
+};
+
+myFunction(person);
+// My name is Brad Traversy. My age is 40. My address is USA.
 
 
 
