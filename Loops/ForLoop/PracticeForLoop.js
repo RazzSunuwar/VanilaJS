@@ -40,13 +40,38 @@
 // 5
 // */ 
 
-const names = ["Andrew", "Brad", "Chris", "David"];
-for(let i = names.length-1; i >= 0; i--){
-    console.log(names[i]);
-}
+// const names = ["Andrew", "Brad", "Chris", "David"];
+// for(let i = names.length-1; i >= 0; i--){
+//     console.log(names[i]);
+// }
+// /*
+// David
+// Chris
+// Brad
+// Andrew
+// */ 
+
+// Check for largest population
+
+let cities = [
+    {name: 'Los Angeles', population: 3792621},
+    {name: 'New York', population: 8175133},
+    {name: 'Chicago', population: 2695598},
+    {name: 'Houston', population: 2099451},
+    {name: 'Philadelphia', population: 1526006}
+];
+
+let bigCities = [];
+
+for(let i=0; i < cities.length; i++){
+    if(cities[i].population > 3000000){
+        bigCities.push(cities[i]);
+    };
+};
+console.log(bigCities);
 /*
-David
-Chris
-Brad
-Andrew
+[
+  { name: 'Los Angeles', population: 3792621 },
+  { name: 'New York', population: 8175133 }
+]
 */ 
