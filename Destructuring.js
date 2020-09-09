@@ -197,18 +197,37 @@ intended. */
 
 
 // Practice 
-const person = {
-    name: "Brad Traversy",
-    age: 40,
-    address: "USA"
+// const person = {
+//     name: "Brad Traversy",
+//     age: 40,
+//     address: "USA"
+// };
+
+// const myFunction = ({ name, age, address }) => {
+//     console.log(`My name is ${name}. My age is ${age}. My address is ${address}.`);
+// };
+
+// myFunction(person);
+// // My name is Brad Traversy. My age is 40. My address is USA.
+
+
+
+const warrior = {
+    name: 'Cristen',
+    age: 24,
+    address: {
+        location: 'Mars',
+        state: 'Another One of them'
+    } 
 };
 
-const myFunction = ({ name, age, address }) => {
-    console.log(`My name is ${name}. My age is ${age}. My address is ${address}.`);
-};
-
-myFunction(person);
-// My name is Brad Traversy. My age is 40. My address is USA.
+const { name:firstName, address: {location} } = warrior;
+console.log(firstName);
+console.log(location);
+/*
+Cristen
+Mars
+*/ 
 
 
 
