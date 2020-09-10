@@ -61,14 +61,25 @@ let cities = [
     {name: 'Philadelphia', population: 1526006}
 ];
 
-let bigCities = [];
+// let bigCities = [];
 
-for(let i=0; i < cities.length; i++){
-    if(cities[i].population > 3000000){
-        bigCities.push(cities[i]);
-    };
-};
-console.log(bigCities);
+// for(let i=0; i < cities.length; i++){
+//     if(cities[i].population > 3000000){
+//         bigCities.push(cities[i]);
+//     };
+// };
+// console.log(bigCities);
+// /*
+// [
+//   { name: 'Los Angeles', population: 3792621 },
+//   { name: 'New York', population: 8175133 }
+// ]
+// */ 
+
+let bigCitites = cities.filter((e) => {
+    return e.population > 3000000;
+});
+console.log(bigCitites);
 /*
 [
   { name: 'Los Angeles', population: 3792621 },
