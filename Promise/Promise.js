@@ -51,14 +51,27 @@
 // 	console.log('Now blocking work');
 
 // Practice 
+// let promise = new Promise((resolve, reject) => {
+// 	setTimeout(() => resolve("done!"), 2000);
+// });
+
+// promise
+// 	.then(
+// 		result => console.log(result),
+// 		error => console.log(error)
+// 	);
+
+// // Result: Done!
+
+// Practice 1
 let promise = new Promise((resolve, reject) => {
-	setTimeout(() => resolve("done!"), 2000);
+	setTimeout(() => resolve("done"), 2000);
 });
 
 promise
-	.then(
-		result => console.log(result),
-		error => console.log(error)
-	);
+.then(
+	result => console.log(result),
+	error => console.log(error)
+);
 
-// Result: Done!
+// Result: done
