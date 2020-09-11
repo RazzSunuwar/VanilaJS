@@ -33,6 +33,6 @@ let arr = [
 ];
 
 let newArray = arr.map((value) => {
-	return value;
+	return value.product;
 })
 console.log(newArray);
