@@ -36,3 +36,4 @@ let newArray = arr.map((value) => {
 	return value.product;
 })
 console.log(newArray);
+//[ 'Laptop', 'PC', 'Laptop', 'Smart-watch' ]
