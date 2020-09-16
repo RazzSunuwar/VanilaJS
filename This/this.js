@@ -31,20 +31,34 @@
 
 
 
-// Regular function => global (window, global)
-const video = {
-    title: 'a',
-    play() {
-        console.log(this);
+// // Regular function => global (window, global)
+// const video = {
+//     title: 'a',
+//     play() {
+//         console.log(this);
+//     }
+// };
+
+// function Video(title){
+//     this.title = title;
+//     console.log(this);
+// };
+
+// const v = new Video('b');
+
+
+// Practice this method
+// 1. this key refers to the owner Object;
+
+const person = {
+    firstName : "Ramsey",
+    lastName: "Gates",
+    fullName : function(){
+        return this.firstName + " " + this.lastName;
     }
 };
 
-function Video(title){
-    this.title = title;
-    console.log(this);
-};
-
-const v = new Video('b');
+console.log(person.fullName())
 
 
 

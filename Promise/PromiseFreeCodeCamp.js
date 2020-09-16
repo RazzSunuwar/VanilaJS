@@ -1,4 +1,4 @@
-let add = function(x,y) {
+let add = (x,y) => {
   return new Promise((resolve, reject) => {
     let sum = x+y;
     if(sum) {
@@ -9,7 +9,7 @@ let add = function(x,y) {
   });
 };
 
-let subtract = function(x,y) {
+let subtract = (x,y) => {
   return new Promise((resolve, reject) => {
     let sum = x -y;
     if (sum) {
