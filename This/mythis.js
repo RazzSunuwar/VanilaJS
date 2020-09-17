@@ -39,19 +39,25 @@
 
 // document.getElementById("demo").innerHTML = person.fullName();
 
-var person1 = {
-    fullName: function(){
-        return this.firstName + " " + this.lastName;
-    }
+// var person1 = {
+//     fullName: function(){
+//         return this.firstName + " " + this.lastName;
+//     }
+// }
+
+// var person2 = {
+//     firstName: "John",
+//     lastName: "Doe"
+// }
+
+// var x = person1.fullName.call(person2);
+
+// document.getElementById("demo").innerHTML = x;  // John Doe
+
+
+// this in a function (Strict)
+"use strict"
+document.getElementById('demo').innerHTML = myFunction();
+function myFunction(){
+    return this;
 }
-
-var person2 = {
-    firstName: "John",
-    lastName: "Doe"
-}
-
-var x = person1.fullName.call(person2);
-
-document.getElementById("demo").innerHTML = x;  // John Doe
-
-
