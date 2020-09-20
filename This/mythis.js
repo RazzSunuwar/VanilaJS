@@ -55,9 +55,20 @@
 // document.getElementById("demo").innerHTML = x;  // John Doe
 
 
-// this in a function (Strict)
-"use strict"
-document.getElementById('demo').innerHTML = myFunction();
-function myFunction(){
-    return this;
-}
+// // this in a function (Strict)
+// "use strict"
+// document.getElementById('demo').innerHTML = myFunction();
+// function myFunction(){
+//     return this;
+// };
+
+const test = {
+    prop: 42,
+    myFunction : function(){
+        return this.prop;
+    },
+};
+
+console.log(test.myFunction());
+
+// Result: 42
