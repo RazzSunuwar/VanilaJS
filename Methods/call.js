@@ -91,7 +91,6 @@
 //   firstName: 'Romieo',
 //   lastName: 'Watt',
 // }
-<<<<<<< HEAD
 
 
 // let PersonTwo = {
@@ -106,16 +105,14 @@
 
 
 // Practice
-const add = (a, b) => {
-  return a + b;
-};
+// const add = (a, b) => {
+//   return a + b;
+// };
 
-let result = add.call(this, 10, 20);
-console.log(result);
+// let result = add.call(this, 10, 20);
+// console.log(result);
 // Result: 30
 
-=======
-
 
 // let PersonTwo = {
 //   firstName: 'Rio',
@@ -129,23 +126,22 @@ console.log(result);
 
 
 // Practice
-let person = {
-  fullName: function(){
-    return this.firstName + " " + this.lastName;
-  }
-};
+// let person = {
+//   fullName: function(){
+//     return this.firstName + " " + this.lastName;
+//   }
+// };
 
-let firstPerson = {
-  firstName: "Andrew",
-  lastName: "Arshavin"
-};
+// let firstPerson = {
+//   firstName: "Andrew",
+//   lastName: "Arshavin"
+// };
 
-let secondPerson = {
-  firstName: "Brad",
-  lastName: "Gates"
-};
+// let secondPerson = {
+//   firstName: "Brad",
+//   lastName: "Gates"
+// };
 
-let personFullName = person.fullName.call(firstPerson);
-console.log(personFullName);  
-// Result: Andrew Arshavin
->>>>>>> e50058e71ddc1320ebce2e28b8c77fc86699bd53
+// let personFullName = person.fullName.call(firstPerson);
+// console.log(personFullName);  
+// // Result: Andrew Arshavin
