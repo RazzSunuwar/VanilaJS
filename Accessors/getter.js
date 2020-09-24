@@ -12,3 +12,5 @@ let person = {
 };
 
 document.getElementById("demo").innerHTML = person.lang;
+
+// Note: We use get to display data from the object
