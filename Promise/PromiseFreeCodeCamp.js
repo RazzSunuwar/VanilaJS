@@ -38,7 +38,7 @@ add(2,2)
 })
 
 .then((result) => {
-  // resul= 12
+  // result= 12
   console.log("My result is ", result);
 })
 
