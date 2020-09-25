@@ -1,4 +1,4 @@
-var day;
+let day;
 switch (new Date().getDay()) {
     case 0:
         day = "Sunday";
