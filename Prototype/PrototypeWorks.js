@@ -13,11 +13,19 @@
 
 
 
-function Mobile(){
-    this.a = 20;
+// function Mobile(){
+//     this.a = 20;
+// }
+
+// Mobile.prototype.a = 10;
+
+// var lg = new Mobile();
+// console.log(lg.a);  //20
+
+
+let Laptop = function(model_no){
+    this.model = model_no
 }
 
-Mobile.prototype.a = 10;
-
-var lg = new Mobile();
-console.log(lg.a);  //20
+let myLaptop = new Laptop(hp14);
+document.write(myLaptop);
