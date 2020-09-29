@@ -96,9 +96,14 @@
 // let string = "Hello World";
 // console.log(string.includes("World"));  //true
 
-let str = "JavaScript String";
-console.log(str.includes("String", 1));
+// let str = "JavaScript String";
+// console.log(str.includes("String", 1));
 
+let string = "Hello World";
+let substrings = string.split(" ");
+
+console.log(substrings);
+//  [ 'Hello', 'World' ]
 
 
 
