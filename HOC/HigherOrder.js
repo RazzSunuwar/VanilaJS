@@ -1,13 +1,13 @@
-const companies = [
-    {name: "Company 0ne", category: "Finance", start: 1981, end: 2002},
-    {name: "Company Two", category: "Retail", start: 1982, end: 2003},
-    {name: "Company Four", category: "Auto", start: 1983, end: 2002},
-    {name: "Company Five", category: "Technology", start: 1980, end: 2005},
-    {name: "Company Six", category: "Finance", start: 1984, end: 2000},
-    {name: "Company Seven", category: "Retail", start: 1986, end: 2003},
-    {name: "Company Eight", category: "Auto", start: 1981, end: 2002},
-    {name: "Company Nine", category: "Technology", start: 1979, end: 2002}
-];
+// const companies = [
+//     {name: "Company 0ne", category: "Finance", start: 1981, end: 2002},
+//     {name: "Company Two", category: "Retail", start: 1982, end: 2003},
+//     {name: "Company Four", category: "Auto", start: 1983, end: 2002},
+//     {name: "Company Five", category: "Technology", start: 1980, end: 2005},
+//     {name: "Company Six", category: "Finance", start: 1984, end: 2000},
+//     {name: "Company Seven", category: "Retail", start: 1986, end: 2003},
+//     {name: "Company Eight", category: "Auto", start: 1981, end: 2002},
+//     {name: "Company Nine", category: "Technology", start: 1979, end: 2002}
+// ];
 
 const ages = [22, 11, 50, 5, 12, 14, 32, 44, 77, 3, 40, 100, 60, 26, 27];
 
@@ -133,8 +133,9 @@ const ages = [22, 11, 50, 5, 12, 14, 32, 44, 77, 3, 40, 100, 60, 26, 27];
 // Combine Methods
 const combined = ages
 .map(age => age * 2)
-.filter(age => age >= 40)
-.sort((a, b) => a - b)
-.reduce((a, b) => a + b, 0);
+// .filter(age => age >= 40)
+// .sort((a, b) => a - b)
+// .reduce((a, b) => a + b, 0);
 
 console.log(combined);
+// [44, 22, 100, 10, 24,  28, 64, 88, 154,  6, 80, 200, 120, 52,  54 ]
