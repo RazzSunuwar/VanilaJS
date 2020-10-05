@@ -10,7 +10,27 @@
 /*In the case of an error, it propagates as usual, from the failed promise to Promise.all, 
 and then becomes an exception that we can catch using try..catch around the call. */
 
-async function f(){
-    return 1;
+// async function f(){
+//     return 1;
+// }
+// f().then(alert);
+
+function download(url, success, failure){
+    setTimeout(() => {
+        console.log(`Downloading ${url} ...`);
+        let error = url.length === 0 || !url;
+        error ? failure(url) : success(url);
+    }, 3000);
 }
-f().then(alert);
+
+download('', 
+    function(picture){
+        console.log(`Processing the picture ${picture}`);
+    },
+    function(picture){
+        console.log(`Handling error...`);
+    }
+);
+
+// Downloading  ...
+// Handling error...
