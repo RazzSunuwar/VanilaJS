@@ -37,10 +37,18 @@
 // console.log(b); // 20 Write default number 20
 
 
+// let a, b;
+// [a=40, b=20] = [10];
+// console.log(a); // 10 because default value of a is overwrite by 10;
+// console.log(b); //20
+
 let a, b;
-[a=40, b=20] = [10];
-console.log(a); // 10 because default value of a is overwrite by 10;
-console.log(b); //20
+[a=10, b=20] = [14, 23];
+console.log(a);
+console.log(b);
+
+// 14
+// 23
 
 
 
