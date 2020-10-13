@@ -63,15 +63,25 @@
 
 // // Result: Done!
 
-// Practice 1
-let promise = new Promise((resolve, reject) => {
-	setTimeout(() => resolve("done"), 2000);
-});
+// // Practice 1
+// let promise = new Promise((resolve, reject) => {
+// 	setTimeout(() => resolve("done"), 2000);
+// });
 
-promise
-.then(
-	result => console.log(result),
-	error => console.log(error)
-);
+// promise
+// .then(
+// 	result => console.log(result),
+// 	error => console.log(error)
+// );
 
-// Result: done
+// // Result: done
+
+// const promiseA = new Promise((resolve, reject) => {
+//     resolve(123);
+// })
+// promiseA.then( (value) => console.log("Asynchronus logging has val:", value));
+// console.log("Immediate logging");
+
+// // Immediate logging
+// // Asynchronus logging has val: 123
+
