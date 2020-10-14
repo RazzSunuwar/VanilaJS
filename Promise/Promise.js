@@ -79,9 +79,17 @@
 // const promiseA = new Promise((resolve, reject) => {
 //     resolve(123);
 // })
-// promiseA.then( (value) => console.log("Asynchronus logging has val:", value));
+// promiseA.then( (value) => console.log("Asynchronus logging has value:", value));
 // console.log("Immediate logging");
 
 // // Immediate logging
 // // Asynchronus logging has val: 123
 
+const promiseA = new Promise((resolve, reject) => {
+    resolve(123);
+})
+promiseA
+    .then((value) => console.log("Asynchronus logging has value: Value", value));
+    console.log("Immediate logging");
+    // Immediate logging
+    // Asynchronus logging has value: Value 123
