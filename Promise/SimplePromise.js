@@ -18,19 +18,29 @@
 
 
 
-const hack = new Promise(function(resolve, reject){
-  let hacker = true;
-  if(hacker){
-    resolve("Succeful")
-  }else{
-    reject("Failure")
-  }
-})
+// const hack = new Promise(function(resolve, reject){
+//   let hacker = true;
+//   if(hacker){
+//     resolve("Successful")
+//   }else{
+//     reject("Failure")
+//   }
+// })
 
-hack
-.then(function(data){
-  console.log("Hacking ", data)
-})
-.catch(function(data){
-  console.log("Hacking", data)
-})
+// hack
+// .then(function(data){
+//   console.log("Hacking ", data)
+// })
+// .catch(function(data){
+//   console.log("Hacking", data)
+// })
+
+let promise = new Promise((resolve, reject) => {
+  setTimeout(() => resolve("done"), 1000);
+});
+
+promise.then(
+  result => console.log(result),
+  error => console.log(error)
+);
+// done
