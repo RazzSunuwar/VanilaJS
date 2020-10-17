@@ -85,11 +85,28 @@
 // // Immediate logging
 // // Asynchronus logging has val: 123
 
-const promiseA = new Promise((resolve, reject) => {
-    resolve(123);
-})
-promiseA
-    .then((value) => console.log("Asynchronus logging has value: Value", value));
-    console.log("Immediate logging");
-    // Immediate logging
-    // Asynchronus logging has value: Value 123
+// const promiseA = new Promise((resolve, reject) => {
+//     resolve(123);
+// })
+// promiseA
+//     .then((value) => console.log("Asynchronus logging has value: Value", value));
+//     console.log("Immediate logging");
+//     // Immediate logging
+//     // Asynchronus logging has value: Value 123
+
+let number = 10;
+
+let promise = new Promise((resolve, reject)=>{
+    if((5+5) == number){
+        resolve("It is equal")
+    } else{
+        reject("It is not equal")
+    }
+});
+
+promise
+.then(
+    result => console.log(result),
+    error => console.log(error)
+);
+// It is equal
