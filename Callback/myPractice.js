@@ -15,18 +15,30 @@
 // let btn = document.querySelector("#btn");
 // btn.addEventListener("click", btnClicked);
 
-function download(url, callback){
-    setTimeout(() => {
-        console.log(`Downloading ${url}...`);
-        callback(url)
-    }, 3*1000);
+// function download(url, callback){
+//     setTimeout(() => {
+//         console.log(`Downloading ${url}...`);
+//         callback(url)
+//     }, 3*1000);
+// }
+
+// function process(picture){
+//     console.log(`Processing ${picture}`);
+// }
+
+// let url = "https://www.javascripttutorial.net/javascript-callback/";
+
+// download(url, process);
+
+function myDisplayer(some){
+    console.log(some);
 }
 
-function process(picture){
-    console.log(`Processing ${picture}`);
+function myCalculator(num1, num2, callback){
+    let sum = num1 + num2;
+    callback(sum);
 }
 
-let url = "https://www.javascripttutorial.net/javascript-callback/";
-
-download(url, process);
+myCalculator(5,5, myDisplayer);
+// Result: 10
 
