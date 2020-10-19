@@ -94,19 +94,33 @@
 //     // Immediate logging
 //     // Asynchronus logging has value: Value 123
 
-let number = 10;
+// let number = 10;
 
-let promise = new Promise((resolve, reject)=>{
-    if((5+5) == number){
-        resolve("It is equal")
-    } else{
-        reject("It is not equal")
+// let promise = new Promise((resolve, reject)=>{
+//     if((5+5) == number){
+//         resolve("It is equal")
+//     } else{
+//         reject("It is not equal")
+//     }
+// });
+
+// promise
+// .then(
+//     result => console.log(result),
+//     error => console.log(error)
+// );
+// // It is equal
+
+let promise = new Promise(function(resolve, reject){
+    let binary = 0+ 1;
+    if(binary ==5){
+        resolve("Success")
+    }else {
+        reject(resolve)
     }
 });
 
-promise
-.then(
+promise(
     result => console.log(result),
     error => console.log(error)
-);
-// It is equal
+)
