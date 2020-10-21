@@ -8,9 +8,17 @@ function function_name(para1, para2,...){
 */ 
 
 
-// Example 1
-const add = (a, b) => {
-    return (a + b)
+// // Example 1
+// const add = (a, b) => {
+//     return (a + b)
+// }
+// console.log("Return the answer", add(10, 20));  // Return 30
+// // Note Expession will return when the function calls
+
+
+const myFunction = (a, b) => {
+    return(a*b);
 }
-console.log("Return the answer", add(10, 20));  // Return 30
-// Note Expession will return when the function calls
+console.log(myFunction(2,5));
+// Result: 10
+
