@@ -41,10 +41,14 @@
 // foo(20);    //20
 
 // Use multiple JavaScript ternary operators
-let speed = 90;
-let message = speed >= 120 ? "Too Fast" : (speed >= 80 ? "Fast" : "Ok");
-console.log(message);
+// let speed = 90;
+// let message = speed >= 120 ? "Too Fast" : (speed >= 80 ? "Fast" : "Ok");
+// console.log(message);
 
+
+let marks = 80;
+let result = marks >=100 ? "Excellent" : (marks >=60 ? "Good": "Ok");
+console.log(result);
 
 
 
