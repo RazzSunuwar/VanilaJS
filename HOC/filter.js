@@ -1,9 +1,9 @@
 let ages = [32, 33, 16, 40];
 
-function checkAdult(age) {
+const checkAdult = (age) => {
     return age >= 18;
-}
+};
 
-function myFunction(){
+const myFunction = () => {
     document.getElementById("demo").innerHTML = ages.filter(checkAdult);
-}
+};
