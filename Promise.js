@@ -35,8 +35,8 @@
 
 // // Result: I have completed Learning JavaScript.
 
-function createApp(completed){
-    return new Promise(function(resolve, reject){
+const createApp = (completed) => {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
             if(completed){
                 resolve("I have completed learning JavaScript.");
