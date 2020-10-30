@@ -212,22 +212,33 @@ intended. */
 
 
 
-const warrior = {
-    name: 'Cristen',
-    age: 24,
-    address: {
-        location: 'Mars',
-        state: 'Another One of them'
-    } 
+// const warrior = {
+//     name: 'Cristen',
+//     age: 24,
+//     address: {
+//         location: 'Mars',
+//         state: 'Another One of them'
+//     } 
+// };
+
+// const { name:firstName, address: {location} } = warrior;
+// console.log(firstName);
+// console.log(location);
+// /*
+// Cristen
+// Mars
+// */ 
+
+
+
+function getScores(){
+  return [70, 80, 90];
 };
 
-const { name:firstName, address: {location} } = warrior;
-console.log(firstName);
-console.log(location);
-/*
-Cristen
-Mars
-*/ 
+let [x,y,z] = getScores();
+console.log(x); // 70
+console.log(y); // 80
+console.log(z); // 90
 
 
 
