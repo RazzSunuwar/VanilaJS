@@ -16,14 +16,15 @@ without new keyword or classes. */
 
 // Factory Function with Parameter
 
-function mobile(model_no) {
+const mobile = (model_no) => {
 	return {
 		model: model_no,
-		price: function(){
+		price: () => {
 		return ("Price Rs.120000")
 		}
-	}
-}
+	};
+};
+
 let samsung = mobile('S10_Plus');
 let nokia = mobile('lumia X plus');
 document.write(samsung.model + " " +samsung.price() + "<br>");
