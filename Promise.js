@@ -88,19 +88,47 @@
 //     );
 // };
 
+// let p = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         resolve(10);
+//     }, 3 * 100);
+// });
+
+// p.then((result) => {
+//     console.log(result);
+//     return result * 2;
+// }).then((result) => {
+//     console.log(result);
+// });
+
+// // Result:
+// // 10
+// // 20
+
 let p = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve(10);
-    }, 3 * 100);
+    }, 3 * 1000);
 });
 
 p.then((result) => {
     console.log(result);
-    return result * 2;
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(result * 2);
+        }, 3*1000);
+    });
 }).then((result) => {
     console.log(result);
-});
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(result * 3);
+        }, 3 * 1000);
+    });
+}).then(result => console.log(result));
 
-// Result:
-// 10
-// 20
+/*
+10
+20
+60
+*/ 
