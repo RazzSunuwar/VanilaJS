@@ -10,7 +10,7 @@
 
 // // Result: 6
 
-function sum(...args){
+const sum = (...args) => {
     return args.filter(e => typeof e === "number")
     .reduce((prev, curr) => prev + curr);
 };
