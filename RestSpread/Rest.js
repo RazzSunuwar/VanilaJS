@@ -10,12 +10,20 @@
 
 // // Result: 6
 
-const sum = (...args) => {
-    return args.filter(e => typeof e === "number")
-    .reduce((prev, curr) => prev + curr);
+// const sum = (...args) => {
+//     return args.filter(e => typeof e === "number")
+//     .reduce((prev, curr) => prev + curr);
+// };
+
+// let result = sum(10, "Hi", null, undefined, 20);
+// console.log(result);
+
+// // Result: 30
+
+const combine = (...args) => {
+    return args.reduce((prev, curr) => prev + " "+ curr);
 };
 
-let result = sum(10, "Hi", null, undefined, 20);
-console.log(result);
-
-// Result: 30
+let message = combine("JavaScript", "Rest", "Parameters");
+console.log(message);
+// JavaScript Rest Parameters
