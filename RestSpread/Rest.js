@@ -20,10 +20,23 @@
 
 // // Result: 30
 
-const combine = (...args) => {
-    return args.reduce((prev, curr) => prev + " "+ curr);
-};
+// const combine = (...args) => {
+//     return args.reduce((prev, curr) => prev + " "+ curr);
+// };
 
-let message = combine("JavaScript", "Rest", "Parameters");
-console.log(message);
-// JavaScript Rest Parameters
+// let message = combine("JavaScript", "Rest", "Parameters");
+// console.log(message);
+// // JavaScript Rest Parameters
+
+
+function myFunction(...args) {
+    let total = 0;
+    for(const a of args){
+        total += a;
+    }
+    return total;
+}
+
+let sum = myFunction(1,2,2);
+console.log(sum);
+//  Result: 5
