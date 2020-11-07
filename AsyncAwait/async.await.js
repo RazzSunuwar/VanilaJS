@@ -15,7 +15,7 @@ and then becomes an exception that we can catch using try..catch around the call
 // }
 // f().then(alert);
 
-function download(url, success, failure){
+const download = (url, success, failure) => {
     setTimeout(() => {
         console.log(`Downloading ${url} ...`);
         let error = url.length === 0 || !url;
@@ -24,10 +24,10 @@ function download(url, success, failure){
 }
 
 download('', 
-    function(picture){
+    (picture) => {
         console.log(`Processing the picture ${picture}`);
     },
-    function(picture){
+    (picture) => {
         console.log(`Handling error...`);
     }
 );
