@@ -5,8 +5,12 @@
 
 // // [ 1, 2, 3, 4, 5, 6, 7 ]
 
-const odd = [1, 3, 5];
-const combined = [2, 4, 6, ...odd];
-console.log(combined);
-// Result: [ 2, 4, 6, 1, 3, 5 ]
+// const odd = [1, 3, 5];
+// const combined = [2, 4, 6, ...odd];
+// console.log(combined);
+// // Result: [ 2, 4, 6, 1, 3, 5 ]
 
+const odd = [1, 3, 5];
+const combined = [2, ...odd, 4, 6];
+console.log(combined);
+// Result: [ 2, 1, 3, 5, 4, 6 ]
