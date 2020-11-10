@@ -40,3 +40,4 @@ let PersonSecond = {
 
 PersonFullName = Person.fullName.apply(PersonFirst, ["Ktm", "12345"]);
 console.log(PersonFullName);
+// Result: John Doe Ktm 12345
