@@ -5,7 +5,7 @@ let course = {
     location: "USA"
 };
 
-function myCourse({courseName, duration, location}){
+const myCourse = ({courseName, duration, location}) => {
     console.log(courseName);    //JavaScript
     console.log(duration);  //One Year
     console.log(location);  //USA
