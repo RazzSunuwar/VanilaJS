@@ -1,4 +1,4 @@
-function myFunction(){
+const myFunction = () => {
     let greeting;
     let time = new Date().getHours();
     if(time < 10) {
@@ -9,4 +9,4 @@ function myFunction(){
         greeting = "Good Evening";
     }
     document.getElementById("demo").innerHTML = greeting;
-}
+};
