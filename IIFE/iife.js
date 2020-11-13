@@ -12,9 +12,17 @@
 
 // // 10 20
 
-((a, b) => {
-    var a = 10;
-    console.log(a  + " " + b);
+// ((a, b) => {
+//     var a = 10;
+//     console.log(a  + " " + b);
+// })(10, 20);
+
+// // Result: 10, 20
+
+let sum = (function(a, b){
+    return a + b;
 })(10, 20);
 
-// Result: 10, 20
+console.log(sum);
+
+// Result: 30
