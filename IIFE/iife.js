@@ -19,7 +19,7 @@
 
 // // Result: 10, 20
 
-let sum = (function(a, b){
+let sum = ((a, b) => {
     return a + b;
 })(10, 20);
 
