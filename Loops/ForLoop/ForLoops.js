@@ -36,21 +36,37 @@ Kawasaki
 Suzuki
 */
 
-let i;
-let text = " ";
-for(i=0; i<= 5; i++){
-    text += i + "<br>"  
-    document.getElementById("demo").innerHTML = text;
-}
+// let i;
+// let text = " ";
+// for(i=0; i<= 5; i++){
+//     text += i + "<br>"  
+//     document.getElementById("demo").innerHTML = text;
+// }
+
+// /*
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+// */
+
+let i = 0;
+let text = "";
+for(i = 0; i <= 5; i++){
+    text += i;
+    console.log(text);
+};
 
 /*
-0
-1
-2
-3
-4
-5
-*/
+0     
+01    
+012   
+0123  
+01234 
+012345
+*/ 
 
 
 
