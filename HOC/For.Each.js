@@ -25,7 +25,7 @@
 // Practice 2
 let names = ['Arron', 'Brad', 'David'];
 
-names.forEach(function(item){
+names.forEach((item) => {
     console.log(item)
 });
 
