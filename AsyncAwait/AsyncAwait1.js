@@ -46,7 +46,7 @@ using async/await: */
  if it supports .then, that’s enough to use it with await. */
 
 // Here’s a demo Thenable class; the await below accepts its instances:
-class Thenable{
+class Thenable {
     constructor(num) {
         this.num = num;
     }
@@ -56,10 +56,11 @@ class Thenable{
     }
 };
 
-async function f() {
+f = async () => {
     let result = await new Thenable(1);
     alert(result);
-}
+};
+
 f();
 
 /* if await gets a non-promise object with .then, it calls that method providing the built-in 
