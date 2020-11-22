@@ -49,8 +49,8 @@
 const userLeft = false;
 const userWatchingCatMeme = false;
 
-function watchTutorialPromise() {
-    return new Promise ((resolve, reject) =>{
+const watchTutorialPromise = () => {
+    return new Promise ((resolve, reject) => {
         if(userLeft) {
             reject({
                 name: 'User Left',
@@ -65,7 +65,7 @@ function watchTutorialPromise() {
             resolve('Thumbs up and Suscribe');
         }
     })
-}
+};
 
 watchTutorialPromise()
 .then((message) => {
