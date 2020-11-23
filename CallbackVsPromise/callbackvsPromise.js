@@ -74,5 +74,6 @@ watchTutorialPromise()
 .catch((error) => {
     console.log(error.name + ' ' + error.message)
 });
+
 // Result: Success Thumbs up and Suscribe
 
