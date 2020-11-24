@@ -4,7 +4,7 @@ const posts = [
 ];
 
 
-function getPosts() {
+const getPosts = () => {
 	setTimeout(() => {
 		let output='';
 		posts.forEach((post, index) => {
@@ -15,7 +15,7 @@ function getPosts() {
 };
 
 
-function createPost(post) {
+const createPost = (post) => {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
 		posts.push(post);
@@ -32,7 +32,7 @@ function createPost(post) {
 
 // Async/ Await
 
-async function inti() {
+const inti = async () => {
 	await createPost({ title: 'Post Three', body: 'This is post Three' });
 
 	getPosts();
@@ -46,9 +46,10 @@ inti();
 
 // Async/ Await / Fetch
 
-async function fetchNumber(){
+const fetchNumber = async () => {
 	const res = await fetch ('https://jsonplaceholder.typicode.com/users');
 	const data = await res.json();
 	console.log(data);
-}
-fetchNumber()
+};
+
+fetchNumber();
