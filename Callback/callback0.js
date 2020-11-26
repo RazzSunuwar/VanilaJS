@@ -3,8 +3,7 @@ const posts = [
 	{title: 'Post Two', body: 'This is post Two'}
 ];
 
-
-function getPosts() {
+const getPosts = () => {
 	setTimeout(() => {
 		let output='';
 		posts.forEach((post, index) => {
@@ -14,8 +13,7 @@ function getPosts() {
 	}, 1000);
 };
 
-
-function createPost(post, callback) {
+const createPost = (post, callback) => {
 	setTimeout(() => {
 		posts.push(post)
 		callback();
