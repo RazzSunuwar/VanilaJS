@@ -30,20 +30,5 @@ myCollection(Cars);
 BMW       
 AUDI      
 LAMBORGINI
-D:\VanillaJS\Destructuring\Array\ArrayDestructuring4.js:22
-    console.log(car4);
-                ^
-
-ReferenceError: car4 is not defined
-    at myCollection (D:\VanillaJS\Destructuring\Array\ArrayDestructuring4.js:22:17)
-    at Object.<anonymous> (D:\VanillaJS\Destructuring\Array\ArrayDestructuring4.js:26:1)
-    at Module._compile (internal/modules/cjs/loader.js:1133:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1153:10)
-    at Module.load (internal/modules/cjs/loader.js:977:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:877:14)
-PS D:\VanillaJS\Destructuring\Array> node ArrayDestructuring4.js
-BMW       
-AUDI      
-LAMBORGINI
 [ 'MERCEDES', 'BUGGATI' ]
 */ 
