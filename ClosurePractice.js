@@ -7,8 +7,8 @@
 
 
 
-function outerFunction(outerVariable) {
-    return function innerFunction(innerVariable) {
+const outerFunction = (outerVariable) => {
+    return  innerFunction = (innerVariable) => {
         console.log('Outer Variable:' + outerVariable)
         console.log('Inner Variable:' + innerVariable)
     };
@@ -16,6 +16,7 @@ function outerFunction(outerVariable) {
 
 const newFunction = outerFunction('outside');
 newFunction('inside');
+
 /* Result:
 Outer Variable:outside
 Inner Variable:inside
