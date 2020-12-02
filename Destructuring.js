@@ -231,7 +231,7 @@ intended. */
 
 
 
-function getScores(){
+getScores = () => {
   return [70, 80, 90];
 };
 
