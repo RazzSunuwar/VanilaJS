@@ -145,3 +145,20 @@
 // let personFullName = person.fullName.call(firstPerson);
 // console.log(personFullName);  
 // // Result: Andrew Arshavin
+
+// Practice 2
+let person = {
+    fullName: function(){
+        return this.firstName + " " + this.lastName;
+    }
+};
+
+let PersonFirst = {
+    firstName : "Andrew",
+    lastName : "Traversy"
+};
+
+let personFullName = person.fullName.call(PersonFirst);
+console.log(personFullName);
+
+// Result: Andrew Traversy
