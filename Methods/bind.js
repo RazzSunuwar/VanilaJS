@@ -31,16 +31,31 @@
 // console.log(bound("Nepal"));
 
 
+// let Name = {
+//   firstName : "Brad",
+//   lastName : "Watt"
+// };
+
+// let Person = function(data){
+//   return "Hello"+ " " + this.firstName+ " " + this.lastName + " " + "Welcome" +" "+ "to" + " " + data;
+// };
+
+// let bound = Person.bind(Name);
+// // console.dir(bound);
+// console.log(bound("This World"));
+// // Hello Brad Watt Welcome to This World
+
 let Name = {
   firstName : "Brad",
   lastName : "Watt"
 };
 
-let Person = function(data){
-  return "Hello"+ " " + this.firstName+ " " + this.lastName + " " + "Welcome" +" "+ "to" + " " + data;
+let Person = function (data){
+  return "Hello" + " " + this.firstName + " " + this.lastName + " " + "Welcome" + " " + "to" + " " + data;
 };
 
 let bound = Person.bind(Name);
-// console.dir(bound);
+console.dir(bound);
 console.log(bound("This World"));
-// Hello Brad Watt Welcome to This World
+
+// Result: Hello Brad Watt Welcome to This World
