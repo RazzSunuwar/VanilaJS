@@ -19,13 +19,13 @@ function serverRequest(query, callback){
     let response = query + "full";
     callback(response);
   }, 2000)
-}
+};
 
 function getResults(results){
   console.log("Response to the server: " + results)
-}
+};
 
-serverRequest("The glass is half ",getResults)
+serverRequest("The glass is half ",getResults);
 
 // Result: Response to the server: The glass is half full
 
