@@ -23,14 +23,24 @@
 
 
 // Practice 2
-let names = ['Arron', 'Brad', 'David'];
+// let names = ['Arron', 'Brad', 'David'];
 
-names.forEach((item) => {
-    console.log(item)
+// names.forEach((item) => {
+//     console.log(item);
+// });
+
+// /*
+// Arron
+// Brad
+// David
+// */
+
+let numbers = [1, 2, 3, 4, 5, 6];
+
+numbers.forEach(function myFunction(item, index, arr){
+    arr[index] = item * 2;
 });
 
-/*
-Arron
-Brad
-David
-*/
+console.log(numbers);
+
+// [ 2, 4, 6, 8, 10, 12 ]
