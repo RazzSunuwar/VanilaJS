@@ -18,19 +18,35 @@
 // } while(i < 5);
 // console.log(result);
 
+// let i = 0;
+
+// do {
+//     if(i == 5)
+//     break;
+//     console.log(i);
+//     i++;
+// } while(true);
+
+// /*
+// 0
+// 1
+// 2
+// 3
+// 4
+// */
+
 let i = 0;
 
 do {
-    if(i == 5)
+    if(i == 3)
     break;
     console.log(i);
-    i++;
+    i++; 
 } while(true);
 
 /*
+Result:
 0
 1
 2
-3
-4
-*/
+*/ 
