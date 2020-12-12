@@ -112,7 +112,7 @@
 // // It is equal
 
 let promise = new Promise(function(resolve, reject){
-    let binary = 0+ 1;
+    let binary = 0 + 1;
     if(binary ==5){
         resolve("Success")
     }else {
@@ -123,4 +123,5 @@ let promise = new Promise(function(resolve, reject){
 promise(
     result => console.log(result),
     error => console.log(error)
-)
+);
+
