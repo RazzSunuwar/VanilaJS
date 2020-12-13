@@ -26,12 +26,12 @@ function Mobile(model_no){
 		document.write(this.model + "Price Rs.3000 <br>");
 	}
 
-}
+};
+
 var Samsung = new Mobile('Galaxy ');
 var Nokia = new Mobile('3000 ');
 Samsung.price();
 Nokia.price();
-
 
 /*
 Galaxy Price Rs.3000
