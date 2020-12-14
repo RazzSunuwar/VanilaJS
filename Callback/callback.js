@@ -120,16 +120,30 @@
 
 //                        OR
 
-let add = (a,b) => {
+// let add = (a,b) => {
+//   return a + b;
+// };
+
+// let multiply = (a,b) => {
+//   return a * b;
+// };
+
+// let calc = (num1, num2, callback) => {
+//   return callback(num1, num2);
+// };
+
+// console.log(calc(2, 3, multiply));
+
+
+let add = function(a, b){
   return a + b;
 };
 
-let multiply = (a,b) => {
-  return a * b;
+let average = function(a, b){
+  return (a, b)/2;
 };
 
-let calc = (num1, num2, callback) => {
-  return callback(num1, num2);
-};
+let total = average(10, 15);
+console.log(total);
 
-console.log(calc(2, 3, multiply));
+// Result: 7.5
