@@ -113,15 +113,21 @@
 
 let promise = new Promise(function(resolve, reject){
     let binary = 0 + 1;
-    if(binary ==5){
+    if(binary == 5){
         resolve("Success")
     }else {
-        reject(resolve)
+        reject("Error")
     }
 });
 
-promise(
-    result => console.log(result),
-    error => console.log(error)
-);
+promise
+.then((result) => {
+    console.log("Got result", result)
+})
+.catch((result) => {
+    console.log("Got result", result)
+});
+
+// Result: Got result Error
+
 
