@@ -140,10 +140,10 @@ let add = function(a, b){
 };
 
 let average = function(a, b){
-  return (a, b)/2;
+  return add(a, b)/2;
 };
 
 let total = average(10, 15);
 console.log(total);
 
-// Result: 7.5
+// Result: 12.5
