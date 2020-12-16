@@ -36,13 +36,9 @@ const inti = async () => {
 	await createPost({ title: 'Post Three', body: 'This is post Three' });
 
 	getPosts();
-}
+};
 
 inti();
-
-
-
-
 
 // Async/ Await / Fetch
 
@@ -52,4 +48,4 @@ const fetchNumber = async () => {
 	console.log(data);
 };
 
-fetchNumber();
+fetchNumber();	
