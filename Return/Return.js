@@ -16,9 +16,19 @@ function function_name(para1, para2,...){
 // // Note Expession will return when the function calls
 
 
+// const myFunction = (a, b) => {
+//     return(a*b);
+// }
+// console.log(myFunction(2,5));
+// // Result: 10
+
+
 const myFunction = (a, b) => {
-    return(a*b);
-}
-console.log(myFunction(2,5));
-// Result: 10
+    return ( a * b);
+};
+
+let result = myFunction(10, 2);
+console.log(result);
+
+// Result: 20
 
