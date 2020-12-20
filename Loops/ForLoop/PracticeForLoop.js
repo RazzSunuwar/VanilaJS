@@ -53,13 +53,13 @@
 
 // Check for largest population
 
-let cities = [
-    {name: 'Los Angeles', population: 3792621},
-    {name: 'New York', population: 8175133},
-    {name: 'Chicago', population: 2695598},
-    {name: 'Houston', population: 2099451},
-    {name: 'Philadelphia', population: 1526006}
-];
+// let cities = [
+//   {name: 'Los Angeles', population: 3792621},
+//   {name: 'New York', population: 8175133},
+//   {name: 'Chicago', population: 2695598},
+//   {name: 'Houston', population: 2099451},
+//   {name: 'Philadelphia', population: 1526006}
+// ];
 
 // let bigCities = [];
 
@@ -76,13 +76,31 @@ let cities = [
 // ]
 // */ 
 
-let bigCitites = cities.filter((e) => {
-    return e.population > 3000000;
-});
-console.log(bigCitites);
+// let bigCitites = cities.filter((e) => {
+//     return e.population > 3000000;
+// });
+// console.log(bigCitites);
+
 /*
 [
   { name: 'Los Angeles', population: 3792621 },
   { name: 'New York', population: 8175133 }
 ]
 */ 
+
+let examples = ["Apple", "Bread", "Carrot", "Donut"];
+
+let text = "";
+for(i=0; i < examples.length; i++){
+  text= examples[i];
+  console.log(text);
+};
+
+// Result: 
+/* 
+Apple
+Bread
+Carrot
+Donut
+*/
+
