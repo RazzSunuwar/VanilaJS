@@ -46,9 +46,17 @@
 // console.log(message);
 
 
-let marks = 80;
-let result = marks >=100 ? "Excellent" : (marks >=60 ? "Good": "Ok");
-console.log(result);
+// let marks = 80;
+// let result = marks >=100 ? "Excellent" : (marks >=60 ? "Good": "Ok");
+// console.log(result);
+
+// //Resutl: Good
+
+let age = 18;
+
+let answer = age >= 10 ? "He is young man" : "She is beautiful little girl";
+console.log(answer);
+
 
 
 
