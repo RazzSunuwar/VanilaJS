@@ -7,7 +7,7 @@ function askForNote(topic, callback){
             pdfNote: topic
         })
     }, 2000);
-}
+};
 
 function printNote(pdfNote, callback){
     console.log('Note is in stationary');
@@ -20,7 +20,6 @@ function printNote(pdfNote, callback){
     } else {
         callback('no-electricity');
     }
-
 };
 
 function entertainment(callback){
@@ -36,9 +35,6 @@ function servicing(callback){
         callback();
     }, 2000);
 };
-
-
-
 
 // Execution part
 console.log('Start preparation for the exam');
