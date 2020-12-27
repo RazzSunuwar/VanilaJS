@@ -7,7 +7,7 @@ function askForNote(topic, callback){
             pdfNote: topic
         })
     }, 2000);
-}
+};
 
 function printNote(pdfNote, callback){
     console.log('Note is in stationary');
@@ -22,7 +22,6 @@ function printNote(pdfNote, callback){
     } else {
         callback('no-electricity');
     }
-
 };
 
 function entertainment(callback){
