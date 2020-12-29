@@ -74,10 +74,10 @@ function servicing(cb){
     setTimeout(function(){
         cb()
     }, 2000)
-}
+};
 
 // execution part
 servicing(function(){
     console.log('Bike servicing finished');
     console.log('Now start preparation for the exam')
-})
+});
