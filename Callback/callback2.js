@@ -13,16 +13,29 @@
 
 // JavaScript Callback
 
+// function myResult(result){
+//     console.log(result)
+// };
+
+// function total(a, b, callback){
+//     let sum = a + b;
+//     callback(sum);
+// };
+
+// total(5,5, myResult);
+
+// // Result: 10
+
 function myResult(result){
-    console.log(result)
+    console.log(result);
 };
 
-function total(a, b, callback){
-    let sum = a + b;
+function myprocess(num1, num2, callback){
+    let sum = num1 + num2;
     callback(sum);
-};
+}
 
-total(5,5, myResult);
+myprocess(5, 3, myResult);
 
-// Result: 10
+// Result: 8
 
