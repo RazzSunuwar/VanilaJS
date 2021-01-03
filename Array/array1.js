@@ -11,9 +11,13 @@
  //   document.getElementById("demo").innerHTML += index + ":"+ item + "<br>"
 // });
 
-let fruits = ["Grapes", "Mango", "Apple", "Papaya"];
-let result = fruits.sort();
+// let fruits = ["Grapes", "Mango", "Apple", "Papaya"];
+// let result = fruits.sort();
+// console.log(result);
+
+// // [ 'Apple', 'Grapes', 'Mango', 'Papaya' ]
+
+let numbers = [4, 9, 25,];
+let result = numbers.map(Math. sqrt);
 console.log(result);
-
-// [ 'Apple', 'Grapes', 'Mango', 'Papaya' ]
-
+//Result: [ 2, 3, 5 ]
