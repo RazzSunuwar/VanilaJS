@@ -29,5 +29,17 @@
 // console.log("Max number in array is", maxNumber);
 // // Max number in array is 10
 
+let numbers = [1, 2, 3, 6, 5, 7, 8];
 
+let Greatest = numbers.reduce(callback, 0);
 
+function callback(accumulator, value){
+    if (accumulator % 2 == 4){
+        return accumulator;
+    } else {
+        return value;
+    }
+};
+
+console.log(Greatest);
+// Result: 8
