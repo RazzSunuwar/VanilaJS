@@ -22,18 +22,35 @@
 // console.log(sum);
 // // Result: 45
 
-// Example 3
-/* Method to Find Sum of N Numbers */ 
-    function findSum(num) { 
-        let result = 0; 
-        for(let i = 1; i <= num; i++) { 
-            result = result + i;
-        } 
-        return result
-    } 
-    let num = 14; 
-    console.log(`Sum of numebers from 1 to ${num} is ${findSum(num)}`);
-    // Result: Sum of numebers from 1 to 14 is 105
+// // Example 3
+// /* Method to Find Sum of N Numbers */ 
+//     function findSum(num) { 
+//         let result = 0; 
+//         for(let i = 1; i <= num; i++) { 
+//             result = result + i;
+//         } 
+//         return result
+//     } 
+//     let num = 14; 
+//     console.log(`Sum of numebers from 1 to ${num} is ${findSum(num)}`);
+//     // Result: Sum of numebers from 1 to 14 is 105
+
+// Example 4
+// Terminate the program after reaching 4;
+for(let i = 0; ; i++){
+    if(i == 4){
+        break;
+    };
+    console.log(i);
+};
+
+// Result:
+/*
+0
+1
+2
+3
+*/ 
     
 
 
