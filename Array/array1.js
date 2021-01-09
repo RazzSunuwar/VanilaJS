@@ -17,7 +17,23 @@
 
 // // [ 'Apple', 'Grapes', 'Mango', 'Papaya' ]
 
-let numbers = [4, 9, 25,];
-let result = numbers.map(Math. sqrt);
-console.log(result);
+//let numbers = [4, 9, 25,];
+//let result = numbers.map(Math.sqrt);
+//console.log(result);
 //Result: [ 2, 3, 5 ]
+
+let number = [10, 12, 14, 16, 18];
+
+function passresult(num){
+    return (num >= 10)
+};
+
+function myFunction(){
+    console.log(number.every(passresult));
+};
+
+myFunction();
+
+// Result: true
+
+
