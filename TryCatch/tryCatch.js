@@ -1,3 +1,4 @@
+// Practice 1
 // try {
 //     console.log("Start of try runs");
 //     unicycle;
@@ -16,15 +17,40 @@
 // ...Then the execution continues
 // */ 
 
-function testFunction(){
-    try {
-        return 1;
-    } catch {
-        return 2;
-    } finally {
-        return 3;
+//Practice 2
+// function testFunction(){
+//     try {
+//         return 1;
+//     } catch {
+//         return 2;
+//     } finally {
+//         return 3;
+//     }
+// };
+
+// console.log(testFunction());
+// // 3
+
+//Practice 3
+let connection = {
+    open : function(){
+        console.log("open a connection");
+    },
+    close: function (){
+        console.log("close a connection");
     }
 };
 
-console.log(testFunction());
-// 3
+try {
+    connection.open();
+} catch (error) {
+    console.log("error.message");
+} finally {
+    connection.close();
+}
+
+// Result: 
+/*
+open a connection 
+close a connection
+*/
