@@ -5,11 +5,22 @@ while(condition) {
 }
 */ 
 
-let words = "";
+// let words = "";
+// let i = 0;
+// while(i < 5){
+//     words += +i;
+//     i++;
+// };
+// console.log(words);
+// // Result: 01234
+
+let cars = ["BMW", "TESLA", "LAMBORGINI", "FERRARI", "BUGGATI"];
+let text = "";
 let i = 0;
-while(i < 5){
-    words += +i;
+while(cars[i]){
+    text += cars[i] + "<br>";
     i++;
 };
-console.log(words);
-// Result: 01234
+
+document.getElementById("demo") = text;
+
