@@ -45,33 +45,45 @@
 // console.log(Greatest);
 // // Result: 8
 
-// Practice 4
-let store = [
-    {
-        product: "Laptop",
-        value: 150000,
-        count: 5
-    },
-    {
-        products: "PC",
-        value: 50000,
-        count: 5
-    },
-    {
-        product: "Mobile",
-        value: 10000,
-        count: 3
-    }
-];
+// // Practice 4
+// let store = [
+//     {
+//         product: "Laptop",
+//         value: 150000,
+//         count: 5
+//     },
+//     {
+//         products: "PC",
+//         value: 50000,
+//         count: 5
+//     },
+//     {
+//         product: "Mobile",
+//         value: 10000,
+//         count: 3
+//     }
+// ];
 
-// Task: Find the total value
+// // Task: Find the total value
 
-let totalValue = store.reduce(callback, 0);
+// let totalValue = store.reduce(callback, 0);
 
-function callback(accumulator, item){
-    return accumulator + item.value * item.count
+// function callback(accumulator, item){
+//     return accumulator + item.value * item.count
+// };
+
+// console.log(totalValue);
+
+// // Result: 1030000
+
+let numbers = [1,2,3,4,5,6,7,8,9];
+
+let reduceNumber = numbers.reduce(callback, 0);
+
+function callback(accumulator, value){
+    return accumulator + value
 };
 
-console.log(totalValue);
+console.log(reduceNumber);
 
-// Result: 1030000
+// Result: 45
