@@ -37,12 +37,12 @@
 
 // Example 4
 // Terminate the program after reaching 4;
-for(let i = 0; ; i++){
-    if(i == 4){
-        break;
-    };
-    console.log(i);
-};
+// for(let i = 0; ; i++){
+//     if(i == 4){
+//         break;
+//     };
+//     console.log(i);
+// };
 
 // Result:
 /*
@@ -52,6 +52,13 @@ for(let i = 0; ; i++){
 3
 */ 
     
+const numbers = [1,2,3,4,5,6,7,8,9];
+let total = 0;
+for(i = 0; i < numbers.length; i++){
+    total += numbers[i];
+}
+console.log(total);
+// Result: 45
 
 
 
