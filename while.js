@@ -24,14 +24,14 @@ while(condition) {
 
 // document.getElementById("demo") = text;
 
-let cars = ["BMW", "Volvo", "Saab", "Ford"];
-let i = 0;
-let text = "";
-while (cars[i]){
-    text += cars[i] + "<br>"
-}
+// let cars = ["BMW", "Volvo", "Saab", "Ford"];
+// let i = 0;
+// let text = "";
+// while (cars[i]){
+//     text += cars[i] + "<br>"
+// }
 
-document.getElementById("demo").innerHTML = text;
+// document.getElementById("demo").innerHTML = text;
 
 /*
 BMW,
@@ -39,3 +39,14 @@ Volvo,
 Saab,
 Ford
 */ 
+
+let i = 0;
+let sum = 0;
+
+while (i < 7){
+    i++;
+   sum += i;
+};
+console.log(sum);
+// Result: 28
+
