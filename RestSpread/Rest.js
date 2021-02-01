@@ -29,14 +29,27 @@
 // // JavaScript Rest Parameters
 
 
-function myFunction(...args) {
+// function myFunction(...args) {
+//     let total = 0;
+//     for(const a of args){
+//         total += a;
+//     }
+//     return total;
+// }
+
+// let sum = myFunction(1,2,2);
+// console.log(sum);
+//  Result: 5
+
+let mydata = (...args) => {
     let total = 0;
-    for(const a of args){
+    for(const a of args) {
         total += a;
     }
     return total;
-}
+};
 
-let sum = myFunction(1,2,2);
+let sum = mydata(1,2,4);
 console.log(sum);
-//  Result: 5
+
+// Result: 7

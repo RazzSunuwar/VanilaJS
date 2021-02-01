@@ -23,11 +23,24 @@
 // console.log(numbers);
 // // Result: [ 3, 4, 5, 6, 7, 8 ]
 
-// Practice 3
-let names = ["A", "B", "C", "D", "E"];
-    names.forEach((value, index, arr) => {
+// // Practice 3
+// let names = ["A", "B", "C", "D", "E"];
+//     names.forEach((value, index, arr) => {
+//         arr[index] = value;
+//     });
+// console.log(names);
+
+// // Result: [ 'A', 'B', 'C', 'D', 'E' ]
+
+// Practice 4
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+    numbers.forEach((value, index, arr) => {
         arr[index] = value;
     });
-console.log(names);
-
-// Result: [ 'A', 'B', 'C', 'D', 'E' ]
+console.log(numbers);
+/*
+[
+  1, 2, 3, 4,
+  5, 6, 7
+]
+*/
