@@ -76,7 +76,19 @@
 
 // // Result: 1030000
 
-let numbers = [1,2,3,4,5,6,7,8,9];
+// let numbers = [1,2,3,4,5,6,7,8,9];
+
+// let reduceNumber = numbers.reduce(callback, 0);
+
+// function callback(accumulator, value){
+//     return accumulator + value
+// };
+
+// console.log(reduceNumber);
+
+// // Result: 45
+
+let numbers = [1, 2, 5, 7, 8, 9, 10, 12];
 
 let reduceNumber = numbers.reduce(callback, 0);
 
@@ -85,5 +97,4 @@ function callback(accumulator, value){
 };
 
 console.log(reduceNumber);
-
-// Result: 45
+// 54
