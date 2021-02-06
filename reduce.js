@@ -76,6 +76,8 @@
 
 // // Result: 1030000
 
+// Practce 5
+
 // let numbers = [1,2,3,4,5,6,7,8,9];
 
 // let reduceNumber = numbers.reduce(callback, 0);
@@ -88,13 +90,27 @@
 
 // // Result: 45
 
-let numbers = [1, 2, 5, 7, 8, 9, 10, 12];
+// Practice 6
 
-let reduceNumber = numbers.reduce(callback, 0);
+// let numbers = [1, 2, 5, 7, 8, 9, 10, 12];
 
-function callback(accumulator, value){
-    return accumulator + value
-};
+// let reduceNumber = numbers.reduce(callback, 0);
 
-console.log(reduceNumber);
-// 54
+// function callback(accumulator, value){
+//     return accumulator + value
+// };
+
+// console.log(reduceNumber);
+// // 54
+
+// Practice 7
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+
+function myaccumulator(accumulator, value){
+    return accumulator + value;
+}
+
+let total = numbers.reduce(myaccumulator, 7);
+console.log(total);
+// Result = 35
+
