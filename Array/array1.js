@@ -22,17 +22,26 @@
 //console.log(result);
 //Result: [ 2, 3, 5 ]
 
-let number = [10, 12, 14, 16, 18];
+// let number = [10, 12, 14, 16, 18];
 
-function passresult(num){
-    return (num >= 10)
-};
+// function passresult(num){
+//     return (num >= 10)
+// };
 
-function myFunction(){
-    console.log(number.every(passresult));
-};
+// function myFunction(){
+//     console.log(number.every(passresult));
+// };
 
-myFunction();
+// myFunction();
+
+// // Result: true
+
+// some()
+let strings = [1, 7, 5, 9, 4, 6, 8, 2, 3];
+let lessThanFive = strings.some((e) => {
+    return e < 5;
+});
+console.log(lessThanFive);
 
 // Result: true
 
