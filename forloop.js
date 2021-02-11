@@ -51,14 +51,30 @@
 2
 3
 */ 
+
+// Example 5
     
-const numbers = [1,2,3,4,5,6,7,8,9];
-let total = 0;
-for(i = 0; i < numbers.length; i++){
-    total += numbers[i];
-}
-console.log(total);
-// Result: 45
+// const numbers = [1,2,3,4,5,6,7,8,9];
+// let total = 0;
+// for(i = 0; i < numbers.length; i++){
+//     total += numbers[i];
+// }
+// console.log(total);
+// // Result: 45
+
+// Example 6 
+// Print Odd number between 0 to 5;
+for (let i=0; i < 5; i++){
+    if(i % 2 !== 0){
+        console.log(i);
+    };
+};
+
+// Result: 1, 3
+
+
+
+
 
 
 
