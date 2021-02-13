@@ -6,7 +6,7 @@ Boolean.prototype.myColor = function(){
     };
 };
 
-function myFunction(){
+const myFunction = () => {
     let a = true;
     document.getElementById("demo").innerHTML = a.myColor();
 };
