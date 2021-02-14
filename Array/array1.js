@@ -45,15 +45,31 @@
 
 // // Result: true
 
-let numbers = ["A", "B", "C"];
-let result = numbers.entries();
+// entries()
+// let numbers = ["A", "B", "C"];
+// let result = numbers.entries();
 
-for(value of result){
- console.log(value);
+// for(value of result){
+//  console.log(value);
+// }
+// /*
+// [ 0, 'A' ]
+// [ 1, 'B' ]
+// [ 2, 'C' ]
+// */
+
+// find()
+let ages = [2, 4, 17, 18, 20, 22, 24];
+
+function checkAdult(age){
+    return age >= 18;
 }
-/*
-[ 0, 'A' ]
-[ 1, 'B' ]
-[ 2, 'C' ]
-*/
 
+function myFunction(){
+    let adults = ages.find(checkAdult);
+    console.log(adults);
+}
+
+myFunction();
+
+// Result: 18
