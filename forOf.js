@@ -19,9 +19,12 @@
 // obj.c = 3
 // */
 
-const iterable = [ 10, 20, 30, 40, 50, 60, 70, 80];2
+const iterable = [ 10, 20, 30, 40, 50, 60, 70, 80];
 
 for (let value of iterable){
     value *= 2;
     console.log(value);
 };
+
+// Result: 1, 3
+
